@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name='text:Disqus Shortname' content='' />
+  {block:Description}
+      <meta name="description" content="{MetaDescription}" />
+  {/block:Description}
+  <title>{Title}</title>
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  <link rel="stylesheet" href="http://www.lumeapp.co/blog/css/foundation.css">
+  <link href="https://plus.google.com/109558813375451514809" rel="publisher" />
+  <style type="text/css">
+    #header           { padding-top: 2em; padding-bottom: 2em; background: #e2eaed; }
+    #footer           { padding-top: 3em; padding-bottom: 3em; }
+
+  .nav.site           { padding-top: 1em; padding-right: 0; }
+  .nav.site ul        { list-style-type: none; position: relative; float: right; }
+  .nav.site ul li       { float: left; }
+  .nav.site a,
+  .nav.sitemap a        { margin: 0 12px; color: #70848c; font-variant: small-caps; font-size: 1.25em; letter-spacing: 1px; }
+  .nav.site a:hover     { color: #1e2426; border-bottom: 2px solid #1e2426; }
+  .nav.site a.active      { margin: 0 12px; color: #1e2426; border-bottom: 2px solid #1e2426; }
+  .nav.sitemap a:hover    { color: #e4e7e9; border-bottom: 2px solid #e4e7e9; }
+  .nav.sitemap a.active   { margin: 0 12px; color: #e4e7e9; border-bottom: 2px solid #e4e7e9; }
+  .nav.social         { margin: 0 auto; display: block; float: none; }
+
+  #p-blog .title a            { margin: 0 auto; display: block; text-align: center; }
+  .title a img        { float: left; }
+
+
+  .island.b           { padding-top: 90px; padding-bottom: 0; }
+  .island.c           { padding-top: 36px; padding-bottom: 0; }
+  .island.d           { background: #181d1e; }
+  .island.e           { background: #181d1e; }
+
+  .sidebar            { padding: 0 70px; position: fixed; top: 0; left: 0; height: 100%; background: #1f232b; }
+  .sidebar img        { margin: 36px auto 0; display: block; }
+
+  .categories         { padding-top: 4em; }
+  .categories > p       { color: #1f232b; font-size: .75em; font-weight: 600; text-transform: uppercase; }
+  .categories a         { padding-bottom: 1.5em; color: #505562; font-size: .75em; text-transform: uppercase; text-decoration: none; display: block; }
+  .categories a:hover,
+  .categories a.active    { color: #1f232b; text-decoration: underline; }
+
+  .panel            { border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; position: relative; }
+
+  .button           { padding: 4px 12px 8px; height: 40px; font-variant: small-caps; letter-spacing: 1px; display: inline-block; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
+  .button:hover         { -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
+  .button.lg          { padding: 18px 24px 0; height: 63px !important; font-size: 1.25em; -webkit-border-radius: 31.5px; -moz-border-radius: 31.5px; -ms-border-radius: 31.5px; -o-border-radius: 31.5px; border-radius: 31.5px; }
+  .button.xl          { padding: 18px 48px 0px; height: 72px; font-size: 1.5em; display: inline-block; -webkit-border-radius: 36px; -moz-border-radius: 36px; -ms-border-radius: 36px; -o-border-radius: 36px; border-radius: 36px; }
+  .button.circle        { padding: 14px 17px 0; width: 48px; height: 48px; text-align: center; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
+  .button.centered      { margin: 0 auto; padding: 18px 0 0px; width: 45%; height: 72px; display: block; float: none; text-align: center !important; font-size: 1.5em; -webkit-border-radius: 36px; -moz-border-radius: 36px; -ms-border-radius: 36px; -o-border-radius: 36px; border-radius: 36px; }
+  .button.outline       { color: #1e2426; color: #1e2426 !important; background: transparent; border: 2px solid #1e2426; }
+  .button.outline:hover     { background: #1e2426; color: #e4e7e9 !important; border: 2px solid #1e2426; }
+  .button.outline.light     { background: transparent; color: #e4e7e9 !important; border: 2px solid #e4e7e9; }
+  .button.outline.light:hover { background: #e4e7e9; color: #1e2426; border: 2px solid #e4e7e9; }
+  .button.outline.blue    { background: transparent; color: #4eaaff; border: 2px solid #4eaaff; }
+  .button.outline.blue:hover  { background: #4eaaff; color: #f2f2f2; border: 2px solid #4eaaff; }
+  .button.blue        { background: #4eaaff; color: #f2f2f2; }
+  .button.blue:hover      { background: #3fc0d5; }
+  .button.apple         { padding: 0; border: none; }
+  .button.apple:hover     { border: none; }
+  .button.apple svg       { margin: 0 auto; float: none; display: block; }
+
+  .nocolor          { background: transparent; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-light        { background: #e4e7e9; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-light h3       { color: #1e2426 !important; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-blue         { background: #4eaaff; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-green        { background: #33cc02; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-yellow         { background: #ffd500; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-yellow h3      { color: #1e2426 !important; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-orange         { background: #fd5f31; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+  .color-dark         { background: rgba(30,36,38,0.96); transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+
+  .text.bright        { color: #e4e7e9; }
+  .text.light         { color: #c7cfd1; }
+  .text.mid           { color: #b0babf; }
+  .text.dim           { color: #47555b; }
+  .text.dark          { color: #364045; }
+  .text.darker        { color: #1f232b; }
+  .text.blue30        { color: #009796; }
+  .text.dark80        { color: #024041; }
+  .text.center        { text-align: center; }
+  .text.thin          { font-weight: 300; }
+  .image.center         { margin: 0 auto; display: block; float: none; }  
+
+  .aside                    { padding: 18px 0; border-top: 1px solid #c7cfd1; border-bottom: 1px solid #c7cfd1; font-size: .75em; }
+  .aside p                  { margin: 0; }
+
+  .caption                  { color: #939b9f; font-size: .75em; }
+
+  .posts                    { margin-bottom: 6em; padding-bottom: 6em; border-bottom: 1px solid #c7cfd1; }
+  .posts:last-child         { margin-bottom: 4.5em; padding-bottom: 0; border: none; }
+  .post:last-child .post-footer { margin-bottom: 0; }
+  .post-body a              { border-bottom: 1px solid #51c1ca; }
+  .post-body img            { margin-bottom: 1em; width: 100%; display: block; }
+  .post-title               { margin-bottom: 2em; text-align: center; }
+  .post-footer              { margin: 0 auto; padding: 3em 0 0; }
+  .post-footer div          { display: block; float: none; position: relative; }
+  .post-footer .date        {  }
+  .post-footer .date p      { padding: 6px 12px; color: #939b9f; text-align: center; font-size: .75em; letter-spacing: 1px; text-transform: uppercase; }
+  .post-footer .tags        { padding-top: 36px; padding-bottom: 36px; border-top: 1px solid #c7cfd1; border-bottom: 1px solid #c7cfd1; }
+  .post-footer .tags p      { margin: 0 auto; text-align: center; }
+  .post-footer .tags a      { padding-bottom: 3px; color: #33cccc; }
+  .post-footer .tags a:hover{ color: #1f232b; text-decoration: none; border-bottom: 2px solid #33cccc; }
+  .post-footer .tags .tag:after{ content:", "; }
+  /* .post-footer .tags .tag:last-child:before{ content:"and "; } */
+  .post-footer .tags .tag:last-child:after{ content:""; }
+  
+  .comments-wrap            { background: #e2eaed; }
+  .comments                 { padding-top: 2em; padding-bottom: 2em; } 
+
+  a.permalink               { padding-bottom: 3px; border-bottom: 2px solid #33cccc; }
+  .pager a                  { padding: 10px 20px 0; height: 39px; background: #939b9f; color: #e4e7e9; font-variant: small-caps; letter-spacing: 1px; display: inline-block; }
+  .pager a:hover            { background: #1f232b; }
+    #mc_embed_signup        { clear:left; }
+
+    a.mt-share-inline-bar-sm img { width: 34px; height: auto; border: 0px; }
+  a.mt-share-inline-bar-sm:hover { z-index: 50; -webkit-transform: scale3d(1.075, 1.075, 1.075); }
+  a.mt-share-inline-bar-sm { display: inline-block; width: 64px; height: 32px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; margin-right: 0px; text-align: center; position: relative; transition: all 100ms ease-in; -webkit-transition: all 100ms ease-in; -webkit-transform: scale3d(1, 1, 1); }
+  .mt-twitter:hover { background-color: rgb(8, 187, 255); }
+  .mt-twitter { margin-left: -3px;background-color: #1e2426; }
+  .mt-facebook:hover { background-color: rgb(66, 100, 170); }
+  .mt-facebook { margin-left: 25px; background-color: #1e2426; }
+
+    /*  Mobile Affordances  */
+    header                  { padding-bottom: 18px; padding-left: 20px; }
+    header .logo            { margin-top: 18px; display: inline-block; position: relative; }
+    #menuOpen,
+    #menuClose              { padding-top: 9px; position: absolute; top: 1%; right: 5%; }
+    #mobileNav              { display: none; padding: 64px 0 0; width: 100%; min-width: 100%; height: 100%; min-height: 100%; position: absolute; top: 0; left: 0; right: 0; }
+
+  </style>
+  <script type="text/javascript" src="http://www.lumeapp.co/js/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/brl7ybp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body id="p-blog">
+  <div class="wrap island a">
+    <div id="header" class="row-wide hide-for-small pt2 pb1">
+      <div class="row">
+        <div class="large-3 hide-for-small columns title">
+          <a href="http://www.lumeapp.co">
+            <img class="logo" src="http://www.lumeapp.co/img/lume-logo-solo.png" title="" alt="" />
+          </a>
+        </div><!-- title -->
+        <div class="large-9 hide-for-small columns nav site pt1">
+          <ul>
+            <li>
+              <a href="mission.html">mission</a>
+            </li>
+            <li>
+              <a class="active" href="http://blog.lumeapp.co">blog</a>
+            </li>
+            <li>
+              <a class="text thick" href="https://itunes.apple.com/us/app/lume-personal-tracker/id712572824?ls=1&mt=8">get lume</a>
+            </li>
+          </ul>
+        </div><!-- /nav -->
+        <!--
+        <div class="large-3 hide-for-small columns nav site pt2">
+          <a href="https://www.facebook.com/getlume">twitter</a>
+          <a href="http://twitter.com/lumeapp">facebook</a>
+          <a href="mailto:team@magnimbus.com">contact</a>
+        </div>
+        -->
+      </div>
+    </div><!-- /header -->
+    <header class="show-for-small">
+      <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.062px" height="18px" viewBox="0 0 45.062 18" enable-background="new 0 0 45.062 18" xml:space="preserve">
+        <g id="Extras">
+          <g>
+            <path id="logo-svg" fill="#1e2426" d="M3.048,17.597c0,0.148-0.121,0.268-0.268,0.268H0.268C0.121,17.866,0,17.745,0,17.597V0.268
+              C0,0.121,0.121,0,0.268,0H2.78c0.148,0,0.268,0.121,0.268,0.268V17.597z"/>
+            <path id="logo-svg" fill="#1e2426" d="M33.383,15.117v2.525c0,0.148-0.121,0.268-0.268,0.268H29.1c-0.214,0-0.389-0.169-0.401-0.381V10.4
+              c0-0.768-0.087-1.336-0.263-1.704c-0.256-0.513-0.72-0.768-1.393-0.768c-0.619,0-1.078,0.248-1.378,0.742
+              c-0.01,0.019-0.027,0.014-0.029,0.001c-0.051-0.356-0.133-0.628-0.211-0.823c-0.189-0.483-0.467-0.93-0.787-1.267
+              c-0.007-0.007-0.022-0.023-0.035-0.037c-0.008-0.009-0.008-0.029-0.003-0.034c0.01-0.01,0.021-0.02,0.031-0.03
+              c0.791-0.763,1.795-1.145,3.012-1.145c2.737,0,4.105,1.56,4.105,4.681v4.832h1.366C33.262,14.849,33.383,14.969,33.383,15.117z
+               M24.332,6.8c-0.781-0.916-1.978-1.375-3.591-1.375c-0.106,0-0.212,0.002-0.322,0.006c-1.203,0-2.15,0.41-2.84,1.23
+              c-0.023,0.03-0.025,0.041,0.002,0.062c0.027,0.021,1.931,1.502,1.931,1.502s0.014,0.016,0.04-0.006
+              c0.262-0.193,0.583-0.29,0.963-0.29c0.704,0,1.184,0.328,1.44,0.984c0.161,0.401,0.241,1.033,0.241,1.896l0.003,6.834
+              c0,0.148,0.121,0.268,0.268,0.268h2.512c0.148,0,0.268-0.121,0.268-0.268l-0.003-6.93c0.017-0.361,0.054-0.626,0.059-0.918V9.794
+              c0.053-0.849-0.076-1.442-0.224-1.81C24.896,7.515,24.63,7.101,24.332,6.8z M19.232,8.479c0,0-3.463-2.754-3.511-2.793
+              c-0.048-0.039-0.08-0.061-0.08,0c0,0.554,0,12.046,0,12.046c0,0.148,0.121,0.268,0.268,0.268h2.512
+              c0.148,0,0.268-0.121,0.268-0.268l0-6.805c0-1.072,0.181-1.852,0.542-2.34c0.01-0.014,0.026-0.037,0.038-0.06
+              C19.275,8.509,19.232,8.479,19.232,8.479z"/>
+            <path id="logo-svg" fill="#1e2426" d="M45.062,11.929c0-3.873-2.363-6.475-5.881-6.475c-3.461,0-6.071,2.692-6.071,6.261
+              c0,3.7,2.574,6.285,6.26,6.285c1.88,0,3.64-0.639,4.828-1.755l0.16-0.15l-0.004-0.006l0.036-0.026
+              c0.12-0.085,0.149-0.254,0.064-0.374l-1.067-1.624c-0.085-0.121-0.254-0.149-0.374-0.064l-0.441,0.365
+              c-0.742,0.662-1.883,1.083-2.964,1.083c-2.099,0-3.089-1.369-3.337-2.649c0,0,8.342,0,8.534,0c0.191,0,0.257-0.145,0.257-0.257
+              C45.062,12.432,45.062,11.929,45.062,11.929z M36.236,10.511c0.196-1.254,1.153-2.507,2.921-2.507c2.066,0,2.82,1.468,2.972,2.507
+              H36.236z"/>
+            <path id="logo-svg" fill="#1e2426" d="M6.426,15.712c0.181-0.499,0.522-0.877,1.015-1.123c0.118-0.059,0.237-0.104,0.358-0.139
+              c-0.37-0.338-0.622-0.811-0.72-1.373c-0.029-0.164-0.032-0.321-0.032-0.5V5.862c0-0.149-0.122-0.272-0.272-0.272H4.234
+              c-0.149,0-0.272,0.122-0.272,0.272c0,0-0.001,5.274-0.002,6.896c0.004,0.421,0.056,0.828,0.149,1.218
+              c0.332,1.377,1.193,2.529,2.367,3.243C6.263,16.717,6.246,16.211,6.426,15.712z"/>
+            <path id="logo-svg" fill="#1e2426" d="M14.683,5.726c0-0.15-0.122-0.272-0.272-0.272h-2.541c-0.149,0-0.232,0.122-0.232,0.272v6.868
+              c0,0.169-0.015,0.331-0.042,0.488c-0.199,1.141-1.098,1.927-2.284,1.927c-0.386,0-0.735-0.083-1.038-0.234
+              c-0.22,0.009-0.439,0.068-0.653,0.175c-0.403,0.201-0.67,0.496-0.816,0.9c-0.149,0.412-0.133,0.815,0.05,1.232
+              c0.089,0.202,0.209,0.369,0.362,0.511C7.857,17.855,8.564,18,9.312,18c2.565,0,4.701-1.688,5.265-4.024
+              c0.098-0.407,0.106-0.833,0.106-1.274L14.683,5.726z"/>
+          </g>
+        </g>
+      </svg>
+      <a id="menuOpen" href="#">
+        <svg id="hamburger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="34px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve">
+          <g id="Blog_Post_Page">
+          </g>
+          <g id="Blog_Posts">
+          </g>
+          <g id="Blog_Index">
+          </g>
+          <g id="Large">
+            <g id="Layout">
+            </g>
+          </g>
+          <g id="Small">
+            <g id="Intro_6">
+            </g>
+            <g id="Intro_5">
+            </g>
+            <g id="Intro_4">
+            </g>
+            <g id="Intro_3">
+            </g>
+            <g id="Intro_2">
+              <g id="Grid_1_">
+              </g>
+            </g>
+            <g id="Intro_1">
+              <g id="View">
+                <g>
+                  <g>
+                    <line fill="none" stroke="#1E2426" stroke-width="3" stroke-miterlimit="10" x1="9" y1="12" x2="25" y2="12"/>
+                    <line fill="none" stroke="#1E2426" stroke-width="3" stroke-miterlimit="10" x1="9" y1="17" x2="25" y2="17"/>
+                    <line fill="none" stroke="#1E2426" stroke-width="3" stroke-miterlimit="10" x1="9" y1="22" x2="25" y2="22"/>
+                  </g>
+                  <g>
+                    <path fill="#1E2426" d="M17,1c8.837,0,16,7.163,16,16s-7.163,16-16,16C8.163,33,1,25.837,1,17S8.163,1,17,1 M17,0
+                      C7.626,0,0,7.626,0,17s7.626,17,17,17s17-7.626,17-17S26.374,0,17,0L17,0z"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Grid">
+              </g>
+            </g>
+          </g>
+          <g id="Extras">
+          </g>
+        </svg>
+      </a>
+    </header>
+  </div><!-- island a -->
+  {block:IndexPage}
+  <div class="wrap island b">
+    <div id="container" class="row-wide">
+      <div class="row">
+        {block:Posts}
+        <div class="large-12 small-12 columns posts">
+          {block:Text}
+          <div id="{PostID}" class="row post text {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              {block:Title}
+              <div class="post-header">
+                <h3 class="post-title"><a href="{Permalink}">{Title}</a></h3>
+              </div>
+              {/block:Title}
+              <div class="post-body">
+                <div class="post-content">
+                  {Body}
+                  {block:More}
+                    <a class="permalink" href="{Permalink}" title="{Title}">Read more.</a>
+                  {/block:More}
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:Date}
+                <div class="date">
+                  <p>{DayOfMonth}.{MonthNumber}.{Year}</p>
+                </div>
+                {/block:Date}
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post text -->
+          {/block:Text}
+          {block:Photo}
+          <div id="{PostID}" class="row post photo {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              {block:Title}
+              <div class="post-header">
+                <h3 class="post-title"><a href="{Permalink}">{Title}</a></h3>
+              </div>
+              {/block:Title}
+              <div class="post-body">
+                <div class="post-content">
+                  {block:LinkURL}
+                    {LinkOpenTag}
+                      <img src="{PhotoURL-500}" alt="{PhotoAlt}" title="" width="{PhotoWidth-500}" height="{PhotoHeight-500}" />
+                    {LinkCloseTag}
+                  {/block:LinkURL}
+                  {block:HighRes}
+                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" title="" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}" />
+                  {/block:HighRes}
+                  {block:Caption}
+                    <p class="caption">{Caption}</p>
+                  {/block:Caption}
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:Date}
+                <div class="date">
+                  <p>{DayOfMonth}.{MonthNumber}.{Year}</p>
+                </div>
+                {/block:Date}
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post photo -->
+          {/block:Photo}
+          {block:Quote}
+          <div id="{PostID}" class="row post quote {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              <div class="post-body">
+                <div class="post-content">
+                  <blockquote>{Quote}
+                    {block:Source}<cite><span>{Source}</span></cite>{/block:Source}
+                  </blockquote>
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:Date}
+                <div class="date">
+                  <p>{DayOfMonth}.{MonthNumber}.{Year}</p>
+                </div>
+                {/block:Date}
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post quote -->
+          {/block:Quote}
+          {block:Link}
+          <div id="{PostID}" class="row post link {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              {block:Title}
+              <div class="post-header">
+                <h3 class="post-title"><a href="{Permalink}">{Title}</a></h3>
+              </div>
+              {/block:Title}
+              <div class="post-body">
+                <div class="post-content">
+                  <a class="external" href="{URL}" title="" {Target}>{Name}</a>
+                  {block:Description}
+                    <p class="description">{Description}</p>
+                  {/block:Description}
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:Date}
+                <div class="date">
+                  <p>{DayOfMonth}.{MonthNumber}.{Year}</p>
+                </div>
+                {/block:Date}
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post link -->
+          {/block:Link}
+        </div><!-- /posts large-8 -->
+        {/block:Posts}
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /island b -->
+  {block:Pagination}
+  <div class="wrap island c">
+    <div id="pagination" class="row">
+      <div class="large-12 small-12 columns pager">
+        {block:PreviousPage}
+          <a class="older" href="{PreviousPage}">older posts</a>
+        {/block:PreviousPage}
+        {block:NextPage}
+          <a class="newer" href="{NextPage}">newer posts</a>
+        {/block:NextPage}
+      </div>
+    </div><!-- /row -->
+  </div><!-- /island c -->
+  {/block:Pagination}
+  {/block:IndexPage}
+
+  {block:PermalinkPage}
+  <div class="wrap island b">
+    <div id="container" class="row-wide">
+      <div class="row">
+        {block:Posts}
+        <div class="large-12 small-12 columns posts">
+          {block:Text}
+          <div id="{PostID}" class="row post text {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              {block:Title}
+              <div class="post-header">
+                <h3 class="post-title">{Title}</h3>
+              </div>
+              {/block:Title}
+              <div class="post-body">
+                <div class="post-content">
+                  {Body}
+                  {block:More}
+                    <a class="permalink" href="{Permalink}" title="{Title}">Read more.</a>
+                  {/block:More}
+                  <a href="https://itunes.apple.com/us/app/lume-personal-tracker/id712572824?ls=1&mt=8" class="text center button apple mt2 mb1">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255px" height="73px" viewBox="0 0 255 73" enable-background="new 0 0 255 73" xml:space="preserve">
+                    <g id="Blog_Post_Page">
+                    </g>
+                    <g id="Blog_Posts">
+                    </g>
+                    <g id="Blog_Index">
+                    </g>
+                    <g id="Large">
+                      <g id="Layout">
+                        <g display="none">
+                          <defs>
+                            <rect id="SVGID_194_" x="540.894" y="395.501" width="1920" height="1009"/>
+                          </defs>
+                          <clipPath id="SVGID_1_" display="inline">
+                            <use xlink:href="#SVGID_194_"  overflow="visible"/>
+                          </clipPath>
+                        </g>
+                        <g>
+                          <path display="none" fill="#FFFFFF" d="M254.934,65.738c0,4.051-3.281,7.332-7.339,7.332H7.415c-4.056,0-7.349-3.281-7.349-7.332
+                            V7.271c0-4.049,3.293-7.341,7.349-7.341h240.178c4.06,0,7.339,3.293,7.339,7.341L254.934,65.738L254.934,65.738z"/>
+                          <path display="none" fill="#A6A6A6" d="M247.595,74.775H7.415c-4.99,0-9.053-4.052-9.053-9.037V7.273
+                            c0-4.989,4.062-9.047,9.053-9.047h240.178c4.985,0,9.053,4.058,9.053,9.047v58.465C256.649,70.723,252.581,74.775,247.595,74.775
+                            L247.595,74.775z"/>
+                          <path fill="#1E2426" d="M255,65.682c0,4.043-3.283,7.318-7.343,7.318H7.353C3.294,73,0,69.725,0,65.682V7.327
+                            C0,3.286,3.294,0,7.353,0h240.302c4.062,0,7.343,3.286,7.343,7.327L255,65.682L255,65.682z"/>
+                          <path fill="#FFFFFF" d="M56.035,36.098c-0.056-6.17,5.052-9.171,5.285-9.311c-2.892-4.217-7.376-4.793-8.951-4.839
+                            c-3.765-0.396-7.418,2.253-9.336,2.253c-1.956,0-4.91-2.215-8.093-2.15c-4.097,0.063-7.929,2.435-10.031,6.118
+                            c-4.338,7.51-1.103,18.545,3.053,24.615c2.079,2.975,4.508,6.292,7.688,6.175c3.111-0.126,4.273-1.981,8.026-1.981
+                            c3.719,0,4.811,1.981,8.053,1.907c3.338-0.052,5.44-2.986,7.446-5.986c2.402-3.405,3.367-6.763,3.405-6.935
+                            C62.505,45.937,56.1,43.491,56.035,36.098z"/>
+                          <path fill="#FFFFFF" d="M49.91,17.955c1.673-2.092,2.818-4.939,2.5-7.827c-2.422,0.107-5.45,1.675-7.194,3.721
+                            c-1.543,1.803-2.921,4.759-2.565,7.538C45.371,21.59,48.164,20.014,49.91,17.955z"/>
+                          
+                            <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="187.7971" y1="825.9826" x2="187.7971" y2="756.9816" gradientTransform="matrix(1 0 0 1 0 -751)">
+                            <stop  offset="0" style="stop-color:#1A1A1A;stop-opacity:0.1"/>
+                            <stop  offset="0.1235" style="stop-color:#212121;stop-opacity:0.1506"/>
+                            <stop  offset="0.3085" style="stop-color:#353535;stop-opacity:0.2265"/>
+                            <stop  offset="0.5321" style="stop-color:#575757;stop-opacity:0.3181"/>
+                            <stop  offset="0.7834" style="stop-color:#858585;stop-opacity:0.4212"/>
+                            <stop  offset="1" style="stop-color:#B3B3B3;stop-opacity:0.51"/>
+                          </linearGradient>
+                          <path display="none" fill="url(#SVGID_3_)" d="M247.595-1.774H118.947l50.389,76.549h78.258c4.985,0,9.053-4.052,9.053-9.043
+                            V7.273C256.649,2.285,252.581-1.774,247.595-1.774z"/>
+                          <g>
+                            <path fill="#FFFFFF" d="M101.091,58.533h-4.347l-2.381-7.483h-8.277l-2.268,7.483h-4.232l8.203-25.475h5.065L101.091,58.533z
+                               M93.645,47.911l-2.154-6.652c-0.228-0.68-0.657-2.28-1.284-4.799H90.13c-0.253,1.083-0.657,2.684-1.21,4.799l-2.117,6.652
+                              H93.645z"/>
+                            <path fill="#FFFFFF" d="M122.144,49.123c0,3.124-0.848,5.593-2.546,7.406c-1.52,1.614-3.409,2.42-5.662,2.42
+                              c-2.433,0-4.183-0.867-5.245-2.605v9.638h-4.081v-19.78c0-1.962-0.052-3.974-0.151-6.038h3.589l0.228,2.912h0.077
+                              c1.361-2.194,3.427-3.291,6.198-3.291c2.167,0,3.976,0.856,5.423,2.569C121.418,44.071,122.144,46.326,122.144,49.123z
+                               M117.986,49.272c0-1.788-0.402-3.262-1.21-4.424c-0.882-1.208-2.067-1.813-3.553-1.813c-1.007,0-1.922,0.337-2.739,1.001
+                              c-0.819,0.67-1.355,1.545-1.606,2.628c-0.126,0.505-0.19,0.917-0.19,1.242v3.065c0,1.334,0.41,2.462,1.229,3.384
+                              c0.819,0.919,1.884,1.38,3.193,1.38c1.537,0,2.734-0.595,3.589-1.776C117.557,52.775,117.986,51.213,117.986,49.272z"/>
+                            <path fill="#FFFFFF" d="M143.272,49.123c0,3.124-0.848,5.593-2.546,7.406c-1.522,1.614-3.409,2.42-5.664,2.42
+                              c-2.433,0-4.183-0.867-5.245-2.605v9.638h-4.081v-19.78c0-1.962-0.052-3.974-0.151-6.038h3.589l0.228,2.912h0.077
+                              c1.359-2.194,3.425-3.291,6.198-3.291c2.165,0,3.974,0.856,5.425,2.569C142.544,44.071,143.272,46.326,143.272,49.123z
+                               M139.112,49.272c0-1.788-0.404-3.262-1.212-4.424c-0.882-1.208-2.064-1.813-3.549-1.813c-1.007,0-1.922,0.337-2.743,1.001
+                              c-0.819,0.67-1.353,1.545-1.604,2.628c-0.124,0.505-0.191,0.917-0.191,1.242v3.065c0,1.334,0.412,2.462,1.227,3.384
+                              c0.819,0.917,1.884,1.38,3.197,1.38c1.539,0,2.735-0.595,3.589-1.776C138.683,52.775,139.112,51.213,139.112,49.272z"/>
+                            <path fill="#FFFFFF" d="M166.893,51.387c0,2.169-0.758,3.932-2.265,5.293c-1.658,1.485-3.972,2.23-6.939,2.23
+                              c-2.741,0-4.939-0.528-6.597-1.587l0.944-3.402c1.79,1.06,3.756,1.589,5.896,1.589c1.539,0,2.735-0.348,3.589-1.039
+                              c0.856-0.693,1.288-1.619,1.288-2.776c0-1.036-0.358-1.903-1.06-2.609c-0.706-0.704-1.874-1.361-3.515-1.964
+                              c-4.46-1.663-6.692-4.097-6.692-7.297c0-2.09,0.789-3.802,2.362-5.14c1.574-1.336,3.66-2.004,6.256-2.004
+                              c2.318,0,4.25,0.404,5.783,1.21l-1.024,3.327c-1.443-0.781-3.072-1.172-4.895-1.172c-1.44,0-2.569,0.354-3.377,1.059
+                              c-0.68,0.63-1.024,1.397-1.024,2.309c0,1.005,0.392,1.84,1.173,2.494c0.678,0.603,1.914,1.26,3.702,1.964
+                              c2.194,0.884,3.806,1.914,4.837,3.097C166.377,48.152,166.893,49.628,166.893,51.387z"/>
+                            <path fill="#FFFFFF" d="M180.421,43.227h-4.498v8.919c0,2.268,0.792,3.4,2.381,3.4c0.729,0,1.334-0.061,1.813-0.19l0.113,3.099
+                              c-0.804,0.301-1.863,0.452-3.174,0.452c-1.612,0-2.871-0.492-3.781-1.476c-0.905-0.984-1.361-2.632-1.361-4.952v-9.259h-2.68
+                              v-3.063h2.68v-3.363l4.008-1.21v4.573h4.498L180.421,43.227z"/>
+                            <path fill="#FFFFFF" d="M200.678,49.197c0,2.824-0.808,5.142-2.42,6.954c-1.686,1.866-3.93,2.797-6.727,2.797
+                              c-2.699,0-4.845-0.894-6.445-2.68c-1.6-1.79-2.4-4.045-2.4-6.765c0-2.846,0.827-5.178,2.475-6.991
+                              c1.652-1.815,3.876-2.722,6.673-2.722c2.695,0,4.86,0.896,6.499,2.684C199.899,44.209,200.678,46.448,200.678,49.197z
+                               M196.448,49.291c0-1.683-0.364-3.126-1.093-4.334c-0.856-1.459-2.081-2.188-3.668-2.188c-1.635,0-2.889,0.729-3.742,2.188
+                              c-0.731,1.208-1.095,2.676-1.095,4.41c0,1.685,0.364,3.132,1.095,4.336c0.882,1.459,2.113,2.188,3.708,2.188
+                              c1.56,0,2.783-0.745,3.668-2.224C196.07,52.43,196.448,50.977,196.448,49.291z"/>
+                            <path fill="#FFFFFF" d="M213.95,43.753c-0.404-0.075-0.837-0.113-1.286-0.113c-1.436,0-2.546,0.54-3.327,1.627
+                              c-0.678,0.957-1.018,2.167-1.018,3.628v9.638h-4.081V45.949c0-2.115-0.04-4.045-0.119-5.783h3.555l0.149,3.515h0.113
+                              c0.433-1.208,1.11-2.182,2.041-2.912c0.909-0.657,1.891-0.984,2.95-0.984c0.377,0,0.718,0.027,1.02,0.075L213.95,43.753
+                              L213.95,43.753z"/>
+                            <path fill="#FFFFFF" d="M232.202,48.479c0,0.731-0.048,1.348-0.149,1.851h-12.244c0.046,1.815,0.639,3.204,1.776,4.162
+                              c1.032,0.854,2.366,1.283,4.005,1.283c1.813,0,3.467-0.287,4.954-0.867l0.639,2.831c-1.738,0.758-3.79,1.135-6.158,1.135
+                              c-2.848,0-5.084-0.838-6.711-2.511c-1.623-1.675-2.437-3.926-2.437-6.746c0-2.768,0.756-5.075,2.27-6.914
+                              c1.585-1.964,3.727-2.946,6.422-2.946c2.647,0,4.652,0.982,6.013,2.946C231.66,44.258,232.202,46.188,232.202,48.479z
+                               M228.31,47.421c0.029-1.212-0.239-2.255-0.793-3.137c-0.706-1.137-1.794-1.704-3.25-1.704c-1.334,0-2.422,0.553-3.248,1.663
+                              c-0.68,0.882-1.083,1.943-1.208,3.174L228.31,47.421L228.31,47.421z"/>
+                          </g>
+                          <g>
+                            <g>
+                              <path fill="#FFFFFF" d="M84.908,24.052c-1.135,0-2.117-0.056-2.935-0.149V11.586c1.059-0.167,2.209-0.26,3.455-0.26
+                                c4.68,0,6.836,2.303,6.836,6.057C92.264,21.712,89.718,24.052,84.908,24.052z M85.593,12.905c-0.632,0-1.17,0.038-1.616,0.13
+                                v9.363c0.241,0.038,0.704,0.056,1.355,0.056c3.067,0,4.812-1.746,4.812-5.015C90.145,14.522,88.566,12.905,85.593,12.905z"/>
+                              <path fill="#FFFFFF" d="M98.981,24.145c-2.638,0-4.347-1.97-4.347-4.644c0-2.787,1.746-4.774,4.497-4.774
+                                c2.6,0,4.347,1.876,4.347,4.627C103.478,22.176,101.677,24.145,98.981,24.145z M99.058,16.194c-1.449,0-2.378,1.355-2.378,3.25
+                                c0,1.859,0.948,3.214,2.358,3.214c1.411,0,2.358-1.449,2.358-3.252C101.397,17.568,100.469,16.194,99.058,16.194z"/>
+                              <path fill="#FFFFFF" d="M118.52,14.913l-2.824,9.028h-1.84l-1.17-3.92c-0.297-0.984-0.538-1.951-0.726-2.915h-0.038
+                                c-0.147,0.984-0.427,1.97-0.724,2.915l-1.244,3.92h-1.859l-2.657-9.028h2.062l1.022,4.292c0.241,1.022,0.444,1.987,0.613,2.898
+                                h0.038c0.147-0.76,0.389-1.709,0.743-2.879l1.283-4.309h1.635l1.227,4.217c0.297,1.022,0.538,2.025,0.726,2.973h0.054
+                                c0.13-0.928,0.335-1.914,0.613-2.973l1.097-4.217L118.52,14.913L118.52,14.913z"/>
+                              <path fill="#FFFFFF" d="M128.915,23.941h-2.006v-5.184c0-1.596-0.613-2.397-1.82-2.397c-1.189,0-2.006,1.022-2.006,2.211v5.369
+                                h-2.006v-6.447c0-0.798-0.019-1.654-0.075-2.582h1.765l0.094,1.394h0.056c0.54-0.965,1.635-1.577,2.862-1.577
+                                c1.895,0,3.139,1.449,3.139,3.807L128.915,23.941L128.915,23.941z"/>
+                              <path fill="#FFFFFF" d="M134.447,23.941h-2.008v-13.17h2.008V23.941z"/>
+                              <path fill="#FFFFFF" d="M141.761,24.145c-2.636,0-4.347-1.97-4.347-4.644c0-2.787,1.746-4.774,4.495-4.774
+                                c2.601,0,4.347,1.876,4.347,4.627C146.258,22.176,144.455,24.145,141.761,24.145z M141.836,16.194
+                                c-1.449,0-2.377,1.355-2.377,3.25c0,1.859,0.949,3.214,2.356,3.214c1.413,0,2.358-1.449,2.358-3.252
+                                C144.175,17.568,143.249,16.194,141.836,16.194z"/>
+                              <path fill="#FFFFFF" d="M154.166,23.941l-0.145-1.039h-0.054c-0.613,0.837-1.507,1.244-2.64,1.244
+                                c-1.618,0-2.766-1.133-2.766-2.657c0-2.228,1.931-3.381,5.276-3.381v-0.167c0-1.189-0.63-1.784-1.874-1.784
+                                c-0.89,0-1.671,0.224-2.358,0.67l-0.408-1.319c0.835-0.521,1.876-0.781,3.099-0.781c2.358,0,3.549,1.244,3.549,3.735v3.325
+                                c0,0.911,0.04,1.618,0.13,2.155L154.166,23.941L154.166,23.941z M153.89,19.444c-2.228,0-3.346,0.54-3.346,1.82
+                                c0,0.948,0.576,1.411,1.376,1.411c1.02,0,1.97-0.779,1.97-1.838V19.444z"/>
+                              <path fill="#FFFFFF" d="M165.586,23.941l-0.094-1.449h-0.056c-0.576,1.095-1.545,1.654-2.898,1.654
+                                c-2.176,0-3.788-1.914-3.788-4.608c0-2.824,1.671-4.812,3.953-4.812c1.208,0,2.064,0.408,2.546,1.227h0.04v-5.182h2.008v10.737
+                                c0,0.873,0.021,1.69,0.075,2.433L165.586,23.941z M165.289,18.629c0-1.263-0.837-2.341-2.113-2.341
+                                c-1.487,0-2.397,1.319-2.397,3.176c0,1.82,0.944,3.067,2.356,3.067c1.261,0,2.154-1.097,2.154-2.397L165.289,18.629z"/>
+                              <path fill="#FFFFFF" d="M180.029,24.145c-2.636,0-4.345-1.97-4.345-4.644c0-2.787,1.746-4.774,4.495-4.774
+                                c2.601,0,4.347,1.876,4.347,4.627C184.528,22.176,182.726,24.145,180.029,24.145z M180.104,16.194
+                                c-1.447,0-2.376,1.355-2.376,3.25c0,1.859,0.948,3.214,2.356,3.214c1.413,0,2.358-1.449,2.358-3.252
+                                C182.447,17.568,181.518,16.194,180.104,16.194z"/>
+                              <path fill="#FFFFFF" d="M195.314,23.941h-2.008v-5.184c0-1.596-0.613-2.397-1.82-2.397c-1.189,0-2.004,1.022-2.004,2.211v5.369
+                                h-2.008v-6.447c0-0.798-0.019-1.654-0.075-2.582h1.765l0.094,1.394h0.056c0.538-0.965,1.635-1.579,2.86-1.579
+                                c1.895,0,3.141,1.449,3.141,3.807V23.941z"/>
+                              <path fill="#FFFFFF" d="M208.812,16.418h-2.207v4.384c0,1.116,0.387,1.673,1.168,1.673c0.354,0,0.651-0.038,0.89-0.094
+                                l0.056,1.524c-0.389,0.149-0.909,0.224-1.556,0.224c-1.581,0-2.527-0.873-2.527-3.159v-4.552h-1.317v-1.505h1.317v-1.654
+                                l1.97-0.595v2.247h2.207L208.812,16.418z"/>
+                              <path fill="#FFFFFF" d="M219.432,23.941h-2.004v-5.146c0-1.616-0.611-2.433-1.82-2.433c-1.039,0-2.008,0.706-2.008,2.136v5.442
+                                h-2.004v-13.17h2.004v5.423h0.04c0.632-0.984,1.547-1.468,2.714-1.468c1.91,0,3.078,1.485,3.078,3.846L219.432,23.941z"/>
+                              <path fill="#FFFFFF" d="M230.313,19.909h-6.02c0.038,1.709,1.17,2.674,2.845,2.674c0.89,0,1.709-0.149,2.433-0.427l0.312,1.394
+                                c-0.854,0.371-1.859,0.557-3.028,0.557c-2.824,0-4.495-1.784-4.495-4.55c0-2.768,1.711-4.849,4.269-4.849
+                                c2.307,0,3.754,1.709,3.754,4.292C230.387,19.352,230.37,19.668,230.313,19.909z M228.473,18.479
+                                c0-1.394-0.703-2.378-1.985-2.378c-1.152,0-2.064,1.003-2.194,2.378H228.473z"/>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="Small">
+                      <g id="Intro_6">
+                      </g>
+                      <g id="Intro_5">
+                      </g>
+                      <g id="Intro_4">
+                      </g>
+                      <g id="Intro_3">
+                      </g>
+                      <g id="Intro_2">
+                        <g id="Grid_1_">
+                        </g>
+                      </g>
+                      <g id="Intro_1">
+                        <g id="View">
+                        </g>
+                        <g id="Grid">
+                        </g>
+                      </g>
+                    </g>
+                    <g id="Extras">
+                    </g>
+                  </svg>
+                </a>
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:HasTags}
+                <div class="tags">
+                  <p>More articles like this are filed under {block:Tags}<a class="tag" href="{TagURL}">{Tag}</a>{/block:Tags}.</p>
+                </div>
+                {/block:HasTags}
+                {block:Date}
+                <div class="date mt3">
+                  <p>{ShortMonth} {DayOfMonth}, {Year}</p>
+                </div>
+                {/block:Date}
+                <!-- 
+                <div class="share">
+                  <a class="button share" href="">
+                    <img src="http://www.lumeapp.co/blog/img/icn-share.png" alt="an icon indicating an action" title="Share this article." width="16px" height="16px" />
+                  </a>
+                  <div class="blocks">
+                    <a class="button square facebook" href="">
+                      <img src="img/icn-fb.png" alt="an icon indicating an action" title="Share on Facebook" width="12px" height="21px" />
+                    </a>
+                    <a class="button square twitter" href="">
+                      <img src="img/icn-twitter.png" alt="an icon indicating an action" title="Share on Twitter" width="24px" height="16px" />
+                    </a>
+                  </div>
+                  -->
+                </div>
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post text -->
+          {/block:Text}
+          {block:Photo}
+          <div id="{PostID}" class="row post photo {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              {block:Title}
+              <div class="post-header">
+                <h3 class="post-title">{Title}</h3>
+              </div>
+              {/block:Title}
+              <div class="post-body">
+                <div class="post-content">
+                  {block:LinkURL}
+                    {LinkOpenTag}
+                      <img src="{PhotoURL-500}" alt="{PhotoAlt}" title="" width="{PhotoWidth-500}" height="{PhotoHeight-500}" />
+                    {LinkCloseTag}
+                  {/block:LinkURL}
+                  {block:HighRes}
+                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" title="" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}" />
+                  {/block:HighRes}
+                  {block:Caption}
+                    <p class="caption">{Caption}</p>
+                  {/block:Caption}
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:HasTags}
+                <div class="tags">
+                  <p>More articles like this are filed under {block:Tags}<a class="tag" href="{TagURL}">{Tag}</a>{/block:Tags}.</p>
+                </div>
+                {/block:HasTags}
+                {block:Date}
+                <div class="date mt3">
+                  <p>{ShortMonth} {DayOfMonth}, {Year}</p>
+                </div>
+                {/block:Date}
+                <!-- 
+                <div class="share">
+                  <a class="button share" href="">
+                    <img src="http://www.lumeapp.co/blog/img/icn-share.png" alt="an icon indicating an action" title="Share this article." width="16px" height="16px" />
+                  </a>
+                  <div class="blocks">
+                    <a class="button square facebook" href="">
+                      <img src="img/icn-fb.png" alt="an icon indicating an action" title="Share on Facebook" width="12px" height="21px" />
+                    </a>
+                    <a class="button square twitter" href="">
+                      <img src="img/icn-twitter.png" alt="an icon indicating an action" title="Share on Twitter" width="24px" height="16px" />
+                    </a>
+                  </div>
+                  -->
+                </div>
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post photo -->
+          {/block:Photo}
+          {block:Quote}
+          <div id="{PostID}" class="row post quote {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              <div class="post-body">
+                <div class="post-content">
+                  <blockquote>{Quote}
+                    {block:Source}<cite><span>{Source}</span></cite>{/block:Source}
+                  </blockquote>
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:HasTags}
+                <div class="tags">
+                  <p>More articles like this are filed under {block:Tags}<a class="tag" href="{TagURL}">{Tag}</a>{/block:Tags}.</p>
+                </div>
+                {/block:HasTags}
+                {block:Date}
+                <div class="date mt3">
+                  <p>{ShortMonth} {DayOfMonth}, {Year}</p>
+                </div>
+                {/block:Date}
+                <!-- 
+                <div class="share">
+                  <a class="button share" href="">
+                    <img src="http://www.lumeapp.co/blog/img/icn-share.png" alt="an icon indicating an action" title="Share this article." width="16px" height="16px" />
+                  </a>
+                  <div class="blocks">
+                    <a class="button square facebook" href="">
+                      <img src="img/icn-fb.png" alt="an icon indicating an action" title="Share on Facebook" width="12px" height="21px" />
+                    </a>
+                    <a class="button square twitter" href="">
+                      <img src="img/icn-twitter.png" alt="an icon indicating an action" title="Share on Twitter" width="24px" height="16px" />
+                    </a>
+                  </div>
+                  -->
+                </div>
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post quote -->
+          {/block:Quote}
+          {block:Link}
+          <div id="{PostID}" class="row post link {TagsAsClasses}">
+            <div class="large-12 small-12 columns">
+              {block:Title}
+              <div class="post-header">
+                <h3 class="post-title">{Title}</h3>
+              </div>
+              {/block:Title}
+              <div class="post-body">
+                <div class="post-content">
+                  <a class="external" href="{URL}" title="" {Target}>{Name}</a>
+                  {block:Description}
+                    <p class="description">{Description}</p>
+                  {/block:Description}
+                </div>
+              </div>
+              <div class="post-footer mt3">
+                {block:HasTags}
+                <div class="tags">
+                  <p>More articles like this are filed under {block:Tags}<a class="tag" href="{TagURL}">{Tag}</a>{/block:Tags}.</p>
+                </div>
+                {/block:HasTags}
+                {block:Date}
+                <div class="date mt3">
+                  <p>{ShortMonth} {DayOfMonth}, {Year}</p>
+                </div>
+                {/block:Date}
+                <!-- 
+                <div class="share">
+                  <a class="button share" href="">
+                    <img src="http://www.lumeapp.co/blog/img/icn-share.png" alt="an icon indicating an action" title="Share this article." width="16px" height="16px" />
+                  </a>
+                  <div class="blocks">
+                    <a class="button square facebook" href="">
+                      <img src="img/icn-fb.png" alt="an icon indicating an action" title="Share on Facebook" width="12px" height="21px" />
+                    </a>
+                    <a class="button square twitter" href="">
+                      <img src="img/icn-twitter.png" alt="an icon indicating an action" title="Share on Twitter" width="24px" height="16px" />
+                    </a>
+                  </div>
+                  -->
+                </div>
+              </div><!-- /post-footer -->
+            </div>
+          </div><!-- /row post link -->
+          {/block:Link}
+        </div><!-- /posts large-8 -->
+        {/block:Posts}
+      </div><!-- /row -->
+      <div class="row-wide comments-wrap">
+      <div class="row">
+          <div class="large-12 small-12 columns comments">
+              {block:IfDisqusShortname}
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'lume'; // Required - Replace <example> with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+{/block:IfDisqusShortname}
+          </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /island b -->
+  {block:Pagination}
+  <div class="wrap island c">
+    <div id="pagination" class="row">
+      <div class="large-12 small-12 columns pager">
+        {block:PreviousPost}
+          <a class="older" href="{PreviousPost}">previous post</a>
+        {/block:PreviousPost}
+        {block:NextPost}
+          <a class="newer" href="{NextPost}">next post</a>
+        {/block:NextPost}
+      </div>
+    </div><!-- /row -->
+  </div><!-- /island c -->
+  {/block:Pagination}
+  {/block:PermalinkPage}
+  <div class="wrap island e hide-for-small">
+    <div id="footer" class="row">
+      <div class="large-12 small-12 columns outro mb3">
+        <img class="image center" src="http://www.lumeapp.co/img/lume-logo-solo.png" width="67" height="67" />
+        <h4 class="text dim center">Know thyself.</h4>
+      </div>
+      <div class="large-4 small-12 columns nav social mb3">
+        <a class="mt-facebook mt-share-inline-bar-sm"
+        href="https://www.facebook.com/getlume">
+          <img src="http://mojotech-static.s3.amazonaws.com/facebook@2x.png">
+        </a>
+        <a class="mt-twitter mt-share-inline-bar-sm"
+        href="http://twitter.com/lumeapp">
+          <img src="http://mojotech-static.s3.amazonaws.com/twitter@2x.png">
+        </a>
+      </div>
+      <div class="large-12 small-12 columns nav sitemap mb2">
+        <a href="http://blog.lumeapp.co">blog</a>
+        <a href="mailto:team@magnimbus.com">contact</a>
+        <a href="http://www.lumeapp.co/support.html">support</a>
+        <a href="http://www.lumeapp.co/privacy.html">privacy</a>
+        <a href="http://www.lumeapp.co/tos.html">terms</a>
+        <a href="http://www.lumeapp.co/press-kit.zip">press kit</a>
+      </div><!-- /nav -->
+      <div class="large-12 small-12 columns">
+        <p class="b0 text dim center">
+          Copyright &copy;2013 Magnimbus, LLC
+        </p>
+      </div>
+    </div><!-- /footer -->
+  </div><!-- /island e -->
+  <div id="mobileNav" class="color-dark">
+          <a id="menuClose" href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="34px" viewBox="0 0 34 34" enable-background="new 0 0 34 34" xml:space="preserve">
+                <g id="Blog_Post_Page">
+                </g>
+                <g id="Blog_Posts">
+                </g>
+                <g id="Blog_Index">
+                </g>
+                <g id="Large">
+                  <g id="Layout">
+                  </g>
+                </g>
+                <g id="Small">
+                  <g id="Intro_6">
+                  </g>
+                  <g id="Intro_5">
+                  </g>
+                  <g id="Intro_4">
+                  </g>
+                  <g id="Intro_3">
+                  </g>
+                  <g id="Intro_2">
+                    <g id="Grid_1_">
+                    </g>
+                  </g>
+                  <g id="Intro_1">
+                    <g id="View">
+                      <g>
+                        <g>
+                          
+                            <line fill="none" stroke="#E2EAED" stroke-width="3" stroke-miterlimit="10" x1="11.343" y1="22.657" x2="22.657" y2="11.343"/>
+                          
+                            <line fill="none" stroke="#E2EAED" stroke-width="3" stroke-miterlimit="10" x1="11.343" y1="11.343" x2="22.657" y2="22.657"/>
+                        </g>
+                        <g>
+                          <path fill="#E2EAED" d="M17,1c8.837,0,16,7.163,16,16s-7.163,16-16,16C8.163,33,1,25.837,1,17S8.163,1,17,1 M17,0
+                            C7.626,0,0,7.626,0,17s7.626,17,17,17s17-7.626,17-17S26.374,0,17,0L17,0z"/>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="Grid">
+                    </g>
+                  </g>
+                </g>
+                <g id="Extras">
+                </g>
+              </svg>
+            </a>
+          <a class="button outline light xl centered mb2" href="http://lumeapp.tumblr.com">blog</a>
+          <a class="button outline light xl centered mb2" href="mailto:aws@magnimbus.com">contact</a>
+          <a class="button outline light xl centered" href="http://www.lumeapp.co/support.html">support</a>
+        </div><!-- /mobileNav -->
+
+
+  <script src="http://www.lumeapp.co/js/jquery.js"></script>
+  <script src="http://www.lumeapp.co/js/foundation.min.js"></script>
+  <script src="http://www.lumeapp.co/js/app.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#mobileNav').hide();
+      $('#menuOpen').click(function () {
+        $('#mobileNav').fadeIn(200);
+        $('#viewer').addClass('css3-blur');
+        return false;
+      });
+      $('#menuClose').click(function () {
+        $('#mobileNav').fadeOut(100);
+        $('#viewer').removeClass('css3-blur');
+        return false;
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+      po.src = "https://apis.google.com/js/plusone.js?publisherid=109558813375451514809";
+      var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44120850-1', 'lumeapp.co');
+    ga('send', 'pageview');
+  </script>
+
+  
+</body>
+</html>
