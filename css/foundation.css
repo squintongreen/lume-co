@@ -177,7 +177,8 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 36em;
+  /*max-width: 63em;*/
+  max-width: 48em;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
