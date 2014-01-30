@@ -14,8 +14,10 @@
 ----------------------------------------- */
 	header.sticky 				{ position: absolute; top: 0; left: 0; width: 100%; z-index: 1099; }
 	/*#header 					{ background: #fcfdfe; }*/
-	#header > div:first-child 	{ padding-left: 5em; }
-	#header > div:last-child 	{ padding-right: 6em; }
+
+	.title 						{ text-align: center; }
+	.title a 					{ display: inline-block; }
+	.title a img 				{ margin: 0 auto; display: block; }
 
 	.nav.site 					{ padding-top: 1em; padding-right: 0; }
 	.nav.site ul 				{ list-style-type: none; position: relative; float: right; }
