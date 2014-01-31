@@ -67,6 +67,124 @@
 	.text.huge 					{ font-size: 4em; }
 	.image.center 				{ margin: 0 auto; display: block; float: none; }	
 
+	.g.yg,.g.bg,.g.yr,.g.bp 	{ position: relative; }
+	.g.yg:before,.g.yg:after 	{ 
+									content: "";
+									position: absolute;
+									border-radius: 50%;
+								 }
+	.g.yg:before 				{ 	
+									top: -3px;
+									left: -3px;
+									bottom: -3px;
+									right: -3px;
+									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc81e), to(#09e65a));
+									background-image: -webkit-linear-gradient(#ffc81e, #09e65a);
+									background-image: -moz-linear-gradient(#ffc81e, #09e65a);
+									background-image: -o-linear-gradient(#ffc81e, #09e65a);
+									z-index: -2;
+								 }
+	.g.yg:after 				{ 	
+									z-index: -1;
+									top: 0;
+									left: 0;
+									bottom: 0;
+									right: 0;
+									background: #fafafa;
+								 }
+	.g.bg:before,.g.bg:after 	{ 
+									content: "";
+									position: absolute;
+									border-radius: 50%;
+								 }
+	.g.bg:before 				{ 	
+									top: -3px;
+									left: -3px;
+									bottom: -3px;
+									right: -3px;
+									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#49aaff), to(#09e65a));
+									background-image: -webkit-linear-gradient(#49aaff, #09e65a);
+									background-image: -moz-linear-gradient(#49aaff, #09e65a);
+									background-image: -o-linear-gradient(#49aaff, #09e65a);
+									z-index: -2;
+								 }
+	.g.bg:after 				{ 	
+									z-index: -1;
+									top: 0;
+									left: 0;
+									bottom: 0;
+									right: 0;
+									background: #fafafa;
+								 }
+	.g.yr:before,.g.yr:after 	{ 
+									content: "";
+									position: absolute;
+									border-radius: 50%;
+								 }
+	.g.yr:before 				{ 	
+									top: -3px;
+									left: -3px;
+									bottom: -3px;
+									right: -3px;
+									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc81e), to(#fc782e));
+									background-image: -webkit-linear-gradient(#ffc81e, #fc782e);
+									background-image: -moz-linear-gradient(#ffc81e, #fc782e);
+									background-image: -o-linear-gradient(#ffc81e, #fc782e);
+									z-index: -2;
+								 }
+	.g.yr:after 				{ 	
+									z-index: -1;
+									top: 0;
+									left: 0;
+									bottom: 0;
+									right: 0;
+									background: #fafafa;
+								 }
+	.g.bp:before,.g.bp:after 	{ 
+									content: "";
+									position: absolute;
+									border-radius: 50%;
+								 }
+	.g.bp:before 				{ 	
+									top: -3px;
+									left: -3px;
+									bottom: -3px;
+									right: -3px;
+									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#49aaff), to(#e834e9));
+									background-image: -webkit-linear-gradient(#49aaff, #e834e9);
+									background-image: -moz-linear-gradient(#49aaff, #e834e9);
+									background-image: -o-linear-gradient(#49aaff, #e834e9);
+									z-index: -2;
+								 }
+	.g.bp:after 				{ 	
+									z-index: -1;
+									top: 0;
+									left: 0;
+									bottom: 0;
+									right: 0;
+									background: #fafafa;
+								 }
+
+	.circ.lg 					{
+									height: 28em;
+									width: 28em;
+									border-radius: 50%;
+									padding: 0;
+									position: absolute;
+									top: 9em;
+									z-index: -3;
+								}
+	.circ.med 					{
+									height: 18em;
+									width: 18em;
+									border-radius: 50%;
+									padding: 0;
+									position: absolute;
+									top: 9em;
+								}
+	.rt 						{ right: 5%; }
+	.lft 						{ left: 5%; }
+
 	/* Mobile Styles */
 	.nocolor 					{ background: transparent; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.color-light 				{ background: #e4e7e9; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
@@ -76,7 +194,7 @@
 	.color-yellow 				{ background: #ffd500; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.color-yellow h3 			{ color: #1e2426 !important; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.color-orange 				{ background: #fd5f31; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
-	.color-dark 				{ background: rgba(30,36,38,0.96); transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+	.color-dark 				{ background: #080a0a; }
 
 	.visible 					{ opacity: 1; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.invisible 					{ opacity: 0; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
@@ -93,6 +211,33 @@
 /* -----------------------------------------
    Home
 ----------------------------------------- */
+
+	.masthead 					{ text-align: center; }
+	.lume.copy 					{ 
+									margin: 0 auto;
+									padding-top: 10em;
+									height: 23em;
+									width: 23em;
+									display: block;
+									border-radius: 50%;
+									text-align: center;
+								}
+	.lume.preview img,
+	.lume.screen img 			{ margin: 0 auto; display: block; }
+	#usp1 .lume.screen img,
+	#usp3 .lume.screen img 		{ margin-left: 11em; }
+	#usp2 .lume.screen img,
+	#usp4 .lume.screen img 		{ margin-right: 10em; }
+	#usp1						{ padding-top: 11em; }
+	#usp2,#usp3,#usp4 			{ padding-top: 36em; }
+	#usp4 						{ padding-bottom: 12em; }
+
+	.island.f 					{ padding-top: 3em; padding-bottom: 3em; }
+	.island.f .g.bg:after,
+	.island.f .g.bp:after,
+	.island.f .g.yr:after 		{ background: #080a0a; }
+
+	.island.f .lume.copy 		{ height: 12em; width: 12em; padding-top: 3em; }
 
 
 /* -----------------------------------------
