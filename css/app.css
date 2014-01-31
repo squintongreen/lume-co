@@ -74,10 +74,10 @@
 									border-radius: 50%;
 								 }
 	.g.yg:before 				{ 	
-									top: -3px;
-									left: -3px;
-									bottom: -3px;
-									right: -3px;
+									top: -2px;
+									left: -2px;
+									bottom: -2px;
+									right: -2px;
 									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc81e), to(#09e65a));
 									background-image: -webkit-linear-gradient(#ffc81e, #09e65a);
 									background-image: -moz-linear-gradient(#ffc81e, #09e65a);
@@ -98,10 +98,10 @@
 									border-radius: 50%;
 								 }
 	.g.bg:before 				{ 	
-									top: -3px;
-									left: -3px;
-									bottom: -3px;
-									right: -3px;
+									top: -2px;
+									left: -2px;
+									bottom: -2px;
+									right: -2px;
 									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#49aaff), to(#09e65a));
 									background-image: -webkit-linear-gradient(#49aaff, #09e65a);
 									background-image: -moz-linear-gradient(#49aaff, #09e65a);
@@ -122,10 +122,10 @@
 									border-radius: 50%;
 								 }
 	.g.yr:before 				{ 	
-									top: -3px;
-									left: -3px;
-									bottom: -3px;
-									right: -3px;
+									top: -2px;
+									left: -2px;
+									bottom: -2px;
+									right: -2px;
 									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc81e), to(#fc782e));
 									background-image: -webkit-linear-gradient(#ffc81e, #fc782e);
 									background-image: -moz-linear-gradient(#ffc81e, #fc782e);
@@ -146,10 +146,10 @@
 									border-radius: 50%;
 								 }
 	.g.bp:before 				{ 	
-									top: -3px;
-									left: -3px;
-									bottom: -3px;
-									right: -3px;
+									top: -2px;
+									left: -2px;
+									bottom: -2px;
+									right: -2px;
 									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#49aaff), to(#e834e9));
 									background-image: -webkit-linear-gradient(#49aaff, #e834e9);
 									background-image: -moz-linear-gradient(#49aaff, #e834e9);
@@ -174,13 +174,12 @@
 									top: 9em;
 									z-index: -3;
 								}
-	.circ.med 					{
-									height: 18em;
-									width: 18em;
+	.circ.btm 					{
+									height: 23em;
+									width: 23em;
 									border-radius: 50%;
 									padding: 0;
 									position: absolute;
-									top: 9em;
 								}
 	.rt 						{ right: 5%; }
 	.lft 						{ left: 5%; }
@@ -224,6 +223,7 @@
 								}
 	.lume.preview img,
 	.lume.screen img 			{ margin: 0 auto; display: block; }
+
 	#usp1 .lume.screen img,
 	#usp3 .lume.screen img 		{ margin-left: 11em; }
 	#usp2 .lume.screen img,
@@ -231,13 +231,40 @@
 	#usp1						{ padding-top: 11em; }
 	#usp2,#usp3,#usp4 			{ padding-top: 36em; }
 	#usp4 						{ padding-bottom: 12em; }
+	#usp5 						{ text-align: center; }
 
-	.island.f 					{ padding-top: 3em; padding-bottom: 3em; }
+	#wrapper 					{ display: block; position: relative; height: 29em; }
+
+	.island.f .g.bg:before,
+	.island.f .g.bp:before,
+	.island.f .g.yr:before 		{ z-index: 0; }
+
 	.island.f .g.bg:after,
 	.island.f .g.bp:after,
-	.island.f .g.yr:after 		{ background: #080a0a; }
+	.island.f .g.yr:after 		{ background: #080a0a; z-index: 1; }
 
-	.island.f .lume.copy 		{ height: 12em; width: 12em; padding-top: 3em; }
+	.island.f .circ:first-child { left: 10%; z-index: 0; }
+	.island.f .circ:nth-child(2){ left: 36%; z-index: 2; }
+	.island.f .circ:last-child	{ right: 10%; z-index: 1; } 
+	.island.f .lume.copy 		{ 
+									margin-left: -8em;
+									padding-top: 4em;
+									height: 16em;
+									width: 16em;
+									left: 50%;
+									position: absolute;
+									z-index: 2;
+									transition: all 0.15s ease-in-out;
+									-webkit-transition: all 0.15s ease-in-out;
+									-moz-transition: all 0.15s ease-in-out;
+									-ms-transition: all 0.15s ease-in-out;
+									-o-transition: all 0.15s ease-in-out;
+								}
+	.island.f .lume.copy img 	{ padding-bottom: 2em; }
+	.island.f .circ h5,
+	.island.f .circ p 			{ color: #47555b; transition: all 0.15s ease-in-out; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; -ms-transition: all 0.15s ease-in-out; -o-transition: all 0.15s ease-in-out; }
+	.island.f .circ 			{ transition: all 0.15s ease-in-out; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; -ms-transition: all 0.15s ease-in-out; -o-transition: all 0.15s ease-in-out; }
+	.island.f .circ:hover 		{ color: #70848c; }
 
 
 /* -----------------------------------------
@@ -276,12 +303,97 @@
    Animations
 ----------------------------------------- */
 
-	@-webkit-keyframes demo {
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10% {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 4;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    z-index: 4;
+    color: #70848c;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10% {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 4;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    z-index: 4;
+    color: #70848c;
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+	@-keyframes growGlow {
 		from {
-			opacity: 1;
+			opacity: .8;
 		}
 		to {
-			opacity: 0;
+			opacity: 1;
+			transform: scaleX(25%);
+			-webkit-transform: scaleX(25%);
+			-moz-transform: scaleX(25%);
 		}
 	}
+	@-webkit-keyframes growGlow {
+		from {
+			opacity: .8;
+		}
+		to {
+			opacity: 1;
+			transform: scaleX(25%);
+			-webkit-transform: scaleX(25%);
+			-moz-transform: scaleX(25%);
+		}
+	}
+
+	.growGlow 					{ animation-name: growGlow; -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
 

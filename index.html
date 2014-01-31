@@ -132,50 +132,50 @@
       </div>
     </div>
   </div><!-- /island e -->
-  <div class="wrap island f color-dark">
+  <div class="wrap island f color-dark pt3 pb3">
     <div id="usp5" class="row-wide">
-      <div class="large-4 small-12 columns 3up">
-        <div class="g bg circ med">
-          <div class="lume copy">
-            <img src="img/icn-goal.png" alt="" title="" />
-            <h5>Set goals, stay motivated.</h5>
-            <p>
-              By committing your goals to writing, you
-              greatly increase your chances of acheiving
-              success.
-            </p>
-          </div><!-- /lume copy -->
-        </div><!-- /circle -->
-      </div>
-      <div class="large-4 small-12 columns 3up">
-        <div class="g bp circ med">
-          <div class="lume copy">
-            <img src="img/icn-journal.png" alt="" title="" />
-            <h5>Give your data meaning.</h5>
-            <p>
-              Use the Journal to fill in the details. Feeling
-              down? Write about it. Had an amazing day?
-              Take the time  to reflect on why.
-            </p>
-          </div><!-- /lume copy -->
-        </div><!-- /circle -->
-      </div>
-      <div class="large-4 small-12 columns 3up">
-        <div class="g yr circ med">
-          <div class="lume copy">
-            <img src="img/icn-modules.png" alt="" title="" />
-            <h5>Modular by design.</h5>
-            <p>
-              Lume is extensible. New ways to track your
-              health will provide you with new methods
-              of visualizing your health.
-            </p>
-          </div><!-- /lume copy -->
-        </div><!-- /circle -->
+      <div class="large-12 small-12 columns system">
+        <h3 class="text light">A support system for success.</h3>
+        <p class="text dim">Lume is a system of interlocking parts, one supporting the other.</p>
+        <div id="wrapper" class="pt3">
+          <div class="g bg circ btm goals">
+            <div class="lume copy">
+              <img src="img/icn-goal.png" alt="" title="" />
+              <h5>Set goals, stay motivated.</h5>
+              <p>
+                By committing your goals to writing, you
+                greatly increase your chances of acheiving
+                success.
+              </p>
+            </div><!-- /lume copy -->
+          </div><!-- /circle -->
+          <div class="g yr circ btm journal">
+            <div class="lume copy">
+              <img src="img/icn-journal.png" alt="" title="" />
+              <h5>Give your data meaning.</h5>
+              <p>
+                Use the Journal to fill in the details. Feeling
+                down? Write about it. Had an amazing day?
+                Take the time  to reflect on why.
+              </p>
+            </div><!-- /lume copy -->
+          </div><!-- /circle -->
+          <div class="g bp circ btm modules">
+            <div class="lume copy">
+              <img src="img/icn-modules.png" alt="" title="" />
+              <h5>Modular by design.</h5>
+              <p>
+                Lume is extensible. New ways to track your
+                health will provide you with new methods
+                of visualizing your health.
+              </p>
+            </div><!-- /lume copy -->
+          </div><!-- /circle -->
+        </div><!-- /circle wrapper -->
       </div>
     </div><!-- /usp5 -->
   </div><!-- /island f -->
-  <div class="wrap island g hide-for-small">
+  <div class="wrap island g hide-for-small pt3 pb3">
     <div id="footer" class="row">
       <div class="large-12 small-12 columns outro mb3">
         <img class="image center" src="img/lume-logo-solo.png" width="67" height="67" />
@@ -213,147 +213,8 @@
   <script src="js/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/swipe.js"></script>
   <script type="text/javascript">
-    var colorShift;
-    var views;
-    var oldColor = "color-light";
-    views = document.getElementById('viewer');
-
-    function colorShift() {
-     
-      slidePos = window.mySwipe.getPos();        
-      var newColor = "color-light";
-
-      if ( slidePos == 0 )
-        {
-          newColor = "color-light";
-          $('path[id="logo-svg"]').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] path').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"]').attr('stroke', '#1e2426');
-        }
-      else if ( slidePos == 1 ) 
-        {
-          newColor = "color-blue";
-          $('path[id="logo-svg"]').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] path').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] line').attr('stroke', '#e4e7e9');
-        }
-      else if ( slidePos == 2 ) 
-        {
-          newColor = "color-green";
-          $('path[id="logo-svg"]').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] path').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] line').attr('stroke', '#e4e7e9');
-        }
-      else if ( (slidePos == 3) ) 
-        {
-          newColor = "color-yellow";
-          $('path[id="logo-svg"]').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] path').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] line').attr('stroke', '#1e2426');
-        }
-      else if ( (slidePos == 4) ) 
-        {
-          newColor = "color-orange";
-          $('path[id="logo-svg"]').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] path').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] line').attr('stroke', '#e4e7e9');
-        }
-      else if ( (slidePos == 5) ) 
-        {
-          newColor = "color-light";
-          $('path[id="logo-svg"]').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] path').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] line').attr('stroke', '#1e2426');
-        }
-        $(viewer).addClass(newColor);
-        $(viewer).removeClass(oldColor);
-        oldColor = newColor;
-    };
-
-    window.mySwipe = Swipe(document.getElementById('slider'), {
-      continuous: false,
-      callback: function() { colorShift(); }
-    });
-    var slidePos = window.mySwipe.getPos();
-
     $(document).ready(function () {
-      $('.movie-4').addClass('invisible');
-      $('.movie-5').addClass('invisible');
-      $('.movie-6').addClass('invisible');
-      $('#play-3').click(function() {
-        $('.movie-3').addClass('visible');
-        $('.movie-3').removeClass('invisible');
-        $('.movie-4').addClass('invisible');
-        $('.movie-4').removeClass('visible');
-        $('.movie-5').addClass('invisible');
-        $('.movie-5').removeClass('visible');
-        $('.movie-6').addClass('invisible');
-        $('.movie-6').removeClass('visible');
-        $('#play-3').addClass('active');
-        $('#play-4').removeClass('active');
-        $('#play-5').removeClass('active');
-        $('#play-6').removeClass('active');
-        return false;
-      });
-      $('#play-4').click(function() {
-        $('.movie-3').addClass('invisible');
-        $('.movie-3').removeClass('visible');
-        $('.movie-4').addClass('visible');
-        $('.movie-4').removeClass('invisible');
-        $('.movie-5').addClass('invisible');
-        $('.movie-5').removeClass('visible');
-        $('.movie-6').addClass('invisible');
-        $('.movie-6').removeClass('visible');
-        $('#play-3').removeClass('active');
-        $('#play-4').addClass('active');
-        $('#play-5').removeClass('active');
-        $('#play-6').removeClass('active');
-        return false;
-      });
-      $('#play-5').click(function() {
-        $('.movie-3').addClass('invisible');
-        $('.movie-3').removeClass('visible');
-        $('.movie-4').addClass('invisible');
-        $('.movie-4').removeClass('visible');
-        $('.movie-5').addClass('visible');
-        $('.movie-5').removeClass('invisible');
-        $('.movie-6').addClass('invisible');
-        $('.movie-6').removeClass('visible');
-        $('#play-3').removeClass('active');
-        $('#play-4').removeClass('active');
-        $('#play-5').addClass('active');
-        $('#play-6').removeClass('active');
-        return false;
-      });
-      $('#play-6').click(function() {
-        $('.movie-3').addClass('invisible');
-        $('.movie-3').removeClass('visible');
-        $('.movie-4').addClass('invisible');
-        $('.movie-4').removeClass('visible');
-        $('.movie-5').addClass('invisible');
-        $('.movie-5').removeClass('visible');
-        $('.movie-6').addClass('visible');
-        $('.movie-6').removeClass('invisible');
-        $('#play-3').removeClass('active');
-        $('#play-4').removeClass('active');
-        $('#play-5').removeClass('active');
-        $('#play-6').addClass('active');
-        return false;
-      });
-      /*$('#playMovie').click(function () {
-        if ( !($('#movie').hasClass('animating')) )
-        {
-          $('.movie').addClass('animating');
-          $('.movie-1').addClass('stage-1');
-          $('.movie-2').addClass('stage-2');
-          $('.movie-3').addClass('stage-3');
-          $('.movie-4').addClass('stage-4');
-          $('.movie-5').addClass('stage-5');
-          return false;
-        } else { return false; }
-      });*/
       $('#mobileNav').hide();
       $('#menuOpen').click(function () {
         $('#mobileNav').fadeIn(200);
@@ -364,6 +225,26 @@
         $('#mobileNav').fadeOut(100);
         $('#viewer').removeClass('css3-blur');
         return false;
+      });
+
+      // Work Info Hover
+      var goals = $('#usp5 .circ.goals');
+      var journal = $('#usp5 .circ.journal');
+      var modules = $('#usp5 .circ.modules');
+      $(goals).mouseenter(function(){
+        $(goals).addClass('pulse animated')
+      }).mouseleave(function(){
+        $(goals).removeClass('pulse animated');
+      });
+      $(journal).mouseenter(function(){
+        $(journal).addClass('pulse animated')
+      }).mouseleave(function(){
+        $(journal).removeClass('pulse animated');
+      });
+      $(modules).mouseenter(function(){
+        $(modules).addClass('pulse animated')
+      }).mouseleave(function(){
+        $(modules).removeClass('pulse animated');
       });
     });
   </script>
