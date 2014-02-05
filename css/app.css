@@ -200,7 +200,7 @@
 
 	.visible 					{ opacity: 1; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.invisible 					{ opacity: 0; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
-	.spacer 					{ opacity: 0; visibility: none; height: 0; }
+	.spacer 					{ opacity: 0; visibility: none; height: 0; font-size: 0; }
 	.css3-blur 					{ -webkit-filter: blur(3px) !important; filter: blur(3px) !important; opacity: 1; /* restore the opacity for that browser */ }
 
 	a.mt-share-inline-bar-sm img { width: 34px; height: auto; border: 0px; }
@@ -228,9 +228,17 @@
 	
 	.copy 						{ text-align: center; }
 	.screens img 				{ float: left; }
-	#usp1 						{ overflow: visible; background: url('../img/iphone-single-track-0-alt.png') left 40% no-repeat, url('../img/iphone-single-track-1-alt.png') right 40% no-repeat, url('../img/iphone-single-track-2-alt.png') 52% 1% no-repeat, url('../img/iphone-single-track-3-alt.png') 52% 88% no-repeat;  }			
+	#usp1 						{
+									overflow: visible;
+									background: url('../img/iphone-single-track-0-alt.png') left 40% no-repeat,
+									url('../img/iphone-single-track-1-alt.png') right 40% no-repeat,
+									url('../img/iphone-single-track-2-alt.png') 52% 1% no-repeat,
+									url('../img/iphone-single-track-3-alt.png') 52% 88% no-repeat;
+								}			
 	#usp1 .content 				{ height: 83.44em; }
-	#usp1 .copy 				{ padding-top: 33em;}
+	#usp1 .copy				 	{ padding-top: 30em;}
+	#usp2 .content,
+	#usp3 .content 				{ padding-top: 33em; }
 	#wrapper 					{ display: block; position: relative; height: 29em; }
 
 	.island.f .g.bg:before,
@@ -239,7 +247,7 @@
 
 	.island.f .g.bg:after,
 	.island.f .g.bp:after,
-	.island.f .g.yr:after 		{ background: #efefef; z-index: 1; }
+	.island.f .g.yr:after 		{ background: #fafafa; z-index: 1; }
 
 	.island.f .circ:first-child { left: 10%; z-index: 0; }
 	.island.f .circ:nth-child(2){ left: 36%; z-index: 2; }
