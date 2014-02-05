@@ -34,13 +34,13 @@
 	
 	.sidebar 					{ background: #e4e7e9; }
 
-	.button 					{ padding: 4px 12px 8px; height: 40px; font-variant: small-caps; letter-spacing: 1px; display: inline-block; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
+	.button 					{ padding: 4px 12px 8px; display: inline-block; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
 	.button:hover 				{ -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
-	.button.lg 					{ padding: 16px 24px 0; height: 63px !important; font-size: 1.25em; -webkit-border-radius: 31.5px; -moz-border-radius: 31.5px; -ms-border-radius: 31.5px; -o-border-radius: 31.5px; border-radius: 31.5px; }
+	.button.lg 					{ padding: 18px 40px 18px; -webkit-border-radius: 31.5px; -moz-border-radius: 31.5px; -ms-border-radius: 31.5px; -o-border-radius: 31.5px; border-radius: 31.5px; }
 	.button.xl 					{ padding: 18px 48px 0px; height: 72px; font-size: 1.5em; display: inline-block; -webkit-border-radius: 36px; -moz-border-radius: 36px; -ms-border-radius: 36px; -o-border-radius: 36px; border-radius: 36px; }
 	.button.circle 				{ padding: 14px 17px 0; width: 48px; height: 48px; text-align: center; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
 	.button.centered 			{ margin: 0 auto; padding: 18px 0 0px; width: 45%; height: 72px; display: block; float: none; text-align: center !important; font-size: 1.5em; -webkit-border-radius: 36px; -moz-border-radius: 36px; -ms-border-radius: 36px; -o-border-radius: 36px; border-radius: 36px; }
-	.button.outline 			{ color: #1e2426; color: #1e2426 !important; background: transparent; border: 2px solid #1e2426; }
+	.button.outline 			{ color: #47555b; color: #47555b !important; background: transparent; border: 2px solid #47555b; }
 	.button.outline:hover 		{ background: #1e2426; color: #e4e7e9 !important; border: 2px solid #1e2426; }
 	.button.outline.light 		{ background: transparent; color: #e4e7e9 !important; border: 2px solid #e4e7e9; }
 	.button.outline.light:hover { background: #e4e7e9; color: #1e2426; border: 2px solid #e4e7e9; }
@@ -53,8 +53,8 @@
 	.button.apple svg 			{ margin: 0 auto; float: none; display: block; }
 
 	.text.bright 				{ color: #e4e7e9; }
-	.text.light 				{ color: #c7cfd1; }
-	.text.mid 					{ color: #b0babf; }
+	.text.light 				{ color: #b0babf; }
+	.text.mid 					{ color: #70848c; }
 	.text.dim 	 				{ color: #47555b; }
 	.text.dark  				{ color: #364045; }
 	.text.darker 				{ color: #1f232b; }
@@ -184,6 +184,9 @@
 	.rt 						{ right: 5%; }
 	.lft 						{ left: 5%; }
 
+	.bgwrap 					{ width: 100%; height: 83.44em; position: relative; z-index: -10; float: left; }
+	/*.canvas 					{ width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0; } */
+
 	/* Mobile Styles */
 	.nocolor 					{ background: transparent; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.color-light 				{ background: #e4e7e9; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
@@ -197,6 +200,7 @@
 
 	.visible 					{ opacity: 1; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.invisible 					{ opacity: 0; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
+	.spacer 					{ opacity: 0; visibility: none; height: 0; }
 	.css3-blur 					{ -webkit-filter: blur(3px) !important; filter: blur(3px) !important; opacity: 1; /* restore the opacity for that browser */ }
 
 	a.mt-share-inline-bar-sm img { width: 34px; height: auto; border: 0px; }
@@ -212,7 +216,7 @@
 ----------------------------------------- */
 
 	.masthead 					{ text-align: center; }
-	.lume.copy 					{ 
+	.circle.copy 				{ 
 									margin: 0 auto;
 									padding-top: 10em;
 									height: 23em;
@@ -221,18 +225,12 @@
 									border-radius: 50%;
 									text-align: center;
 								}
-	.lume.preview img,
-	.lume.screen img 			{ margin: 0 auto; display: block; }
-
-	#usp1 .lume.screen img,
-	#usp3 .lume.screen img 		{ margin-left: 11em; }
-	#usp2 .lume.screen img,
-	#usp4 .lume.screen img 		{ margin-right: 10em; }
-	#usp1						{ padding-top: 11em; }
-	#usp2,#usp3,#usp4 			{ padding-top: 36em; }
-	#usp4 						{ padding-bottom: 12em; }
-	#usp5 						{ text-align: center; }
-
+	
+	.copy 						{ text-align: center; }
+	.screens img 				{ float: left; }
+	#usp1 						{ overflow: visible; background: url('../img/iphone-single-track-0-alt.png') left 40% no-repeat, url('../img/iphone-single-track-1-alt.png') right 40% no-repeat, url('../img/iphone-single-track-2-alt.png') 52% 1% no-repeat, url('../img/iphone-single-track-3-alt.png') 52% 88% no-repeat;  }			
+	#usp1 .content 				{ height: 83.44em; }
+	#usp1 .copy 				{ padding-top: 33em;}
 	#wrapper 					{ display: block; position: relative; height: 29em; }
 
 	.island.f .g.bg:before,
@@ -241,12 +239,12 @@
 
 	.island.f .g.bg:after,
 	.island.f .g.bp:after,
-	.island.f .g.yr:after 		{ background: #080a0a; z-index: 1; }
+	.island.f .g.yr:after 		{ background: #efefef; z-index: 1; }
 
 	.island.f .circ:first-child { left: 10%; z-index: 0; }
 	.island.f .circ:nth-child(2){ left: 36%; z-index: 2; }
 	.island.f .circ:last-child	{ right: 10%; z-index: 1; } 
-	.island.f .lume.copy 		{ 
+	.island.f .circle.copy 		{ 
 									margin-left: -8em;
 									padding-top: 4em;
 									height: 16em;
@@ -260,7 +258,7 @@
 									-ms-transition: all 0.15s ease-in-out;
 									-o-transition: all 0.15s ease-in-out;
 								}
-	.island.f .lume.copy img 	{ padding-bottom: 2em; }
+	.island.f .circle.copy img 	{ padding-bottom: 2em; }
 	.island.f .circ h5,
 	.island.f .circ p 			{ color: #47555b; transition: all 0.15s ease-in-out; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; -ms-transition: all 0.15s ease-in-out; -o-transition: all 0.15s ease-in-out; }
 	.island.f .circ 			{ transition: all 0.15s ease-in-out; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; -ms-transition: all 0.15s ease-in-out; -o-transition: all 0.15s ease-in-out; }
