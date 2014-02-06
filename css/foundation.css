@@ -147,6 +147,11 @@ select {
   .pr0            { padding-right: 0em !important; }
   .pb0            { padding-bottom: 0em !important; }
   .pl0            { padding-left: 0em !important; }
+  .p05            { padding: 0.5em !important; }
+  .pt05           { padding-top: 0.5em !important; }
+  .pb05           { padding-bottom: 0.5em !important; }
+  .pr05           { padding-right: 0.5em !important; }
+  .pl05           { padding-left: 0.5em !important; }
   .pt1            { padding-top: 1em !important; }
   .pr1            { padding-right: 1em !important; }
   .pb1            { padding-bottom: 1em !important; }
@@ -1264,11 +1269,11 @@ p {
     font-style: normal;
     font-weight: 300; }
   p.b3 {
-    font-family: "ff-din-web", Helvetica, sans-serif;
-    font-size: 1.65em;
+    font-family: "proxima-nova", Helvetica, sans-serif;
+    font-size: 2em;
     line-height: 1.6em;
     font-style: normal;
-    font-weight: 700; }
+    font-weight: 100; }
 
   .subheader {
     line-height: 1;
