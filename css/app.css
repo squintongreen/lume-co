@@ -41,11 +41,6 @@
 
 	.sidebar 					{ background: #e4e7e9; }
 
-	a.continue 					{ color: #47555b; font-weight: 700; }
-	a.continue:hover 			{ color: #fc782e; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; }
-	a.continue:hover img 		{ transform: translate(0,5px); -webkit-transform: -webkit-translateY(0,5px); }
-	a.continue img 				{ margin: 0 auto; display: block; }
-
 	.button 					{ padding: 4px 12px 8px; display: inline-block; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
 	.button:hover 				{ -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
 	.button.lg 					{ padding: 18px 40px 18px; -webkit-border-radius: 31.5px; -moz-border-radius: 31.5px; -ms-border-radius: 31.5px; -o-border-radius: 31.5px; border-radius: 31.5px; }
@@ -81,125 +76,6 @@
 	.text.huge 					{ font-size: 4em; }
 	.image.center 				{ margin: 0 auto; display: block; float: none; }	
 
-	.g.yg,.g.bg,.g.yr,.g.bp 	{ position: relative; }
-	.g.yg:before,.g.yg:after 	{ 
-									content: "";
-									position: absolute;
-									border-radius: 50%;
-								 }
-	.g.yg:before 				{ 	
-									top: -2px;
-									left: -2px;
-									bottom: -2px;
-									right: -2px;
-									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc81e), to(#09e65a));
-									background-image: -webkit-linear-gradient(#ffc81e, #09e65a);
-									background-image: -moz-linear-gradient(#ffc81e, #09e65a);
-									background-image: -o-linear-gradient(#ffc81e, #09e65a);
-									z-index: -2;
-								 }
-	.g.yg:after 				{ 	
-									z-index: -1;
-									top: 0;
-									left: 0;
-									bottom: 0;
-									right: 0;
-									background: #fafafa;
-								 }
-	.g.bg:before,.g.bg:after 	{ 
-									content: "";
-									position: absolute;
-									border-radius: 50%;
-								 }
-	.g.bg:before 				{ 	
-									top: -2px;
-									left: -2px;
-									bottom: -2px;
-									right: -2px;
-									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#49aaff), to(#09e65a));
-									background-image: -webkit-linear-gradient(#49aaff, #09e65a);
-									background-image: -moz-linear-gradient(#49aaff, #09e65a);
-									background-image: -o-linear-gradient(#49aaff, #09e65a);
-									z-index: -2;
-								 }
-	.g.bg:after 				{ 	
-									z-index: -1;
-									top: 0;
-									left: 0;
-									bottom: 0;
-									right: 0;
-									background: #fafafa;
-								 }
-	.g.yr:before,.g.yr:after 	{ 
-									content: "";
-									position: absolute;
-									border-radius: 50%;
-								 }
-	.g.yr:before 				{ 	
-									top: -2px;
-									left: -2px;
-									bottom: -2px;
-									right: -2px;
-									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc81e), to(#fc782e));
-									background-image: -webkit-linear-gradient(#ffc81e, #fc782e);
-									background-image: -moz-linear-gradient(#ffc81e, #fc782e);
-									background-image: -o-linear-gradient(#ffc81e, #fc782e);
-									z-index: -2;
-								 }
-	.g.yr:after 				{ 	
-									z-index: -1;
-									top: 0;
-									left: 0;
-									bottom: 0;
-									right: 0;
-									background: #fafafa;
-								 }
-	.g.bp:before,.g.bp:after 	{ 
-									content: "";
-									position: absolute;
-									border-radius: 50%;
-								 }
-	.g.bp:before 				{ 	
-									top: -2px;
-									left: -2px;
-									bottom: -2px;
-									right: -2px;
-									background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#49aaff), to(#e834e9));
-									background-image: -webkit-linear-gradient(#49aaff, #e834e9);
-									background-image: -moz-linear-gradient(#49aaff, #e834e9);
-									background-image: -o-linear-gradient(#49aaff, #e834e9);
-									z-index: -2;
-								 }
-	.g.bp:after 				{ 	
-									z-index: -1;
-									top: 0;
-									left: 0;
-									bottom: 0;
-									right: 0;
-									background: #fafafa;
-								 }
-
-	.circ.lg 					{
-									height: 28em;
-									width: 28em;
-									border-radius: 50%;
-									padding: 0;
-									position: absolute;
-									top: 9em;
-									z-index: -3;
-								}
-	.circ.btm 					{
-									height: 21em;
-									width: 21em;
-									border-radius: 50%;
-									padding: 0;
-									position: absolute;
-								}
-
-	.bgwrap 					{ width: 100%; height: 83.44em; position: relative; z-index: -10; float: left; }
-	/*.canvas 					{ width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0; } */
-
-	/* Mobile Styles */
 	.nocolor 					{ background: transparent; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.color-light 				{ background: #e4e7e9; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.color-light h3 			{ color: #1e2426 !important; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
@@ -228,62 +104,7 @@
    Home
 ----------------------------------------- */
 
-	.masthead 					{ text-align: center; }	
-	.copy 						{ text-align: center; }
 	.screens img 				{ float: left; }
-	#usp1 						{
-									overflow: visible;
-									background: url('../img/iphone-single-track-0-alt.png') left 40% no-repeat,
-									url('../img/iphone-single-track-1-alt.png') right 40% no-repeat,
-									url('../img/iphone-single-track-2-alt.png') 52% 1% no-repeat,
-									url('../img/iphone-single-track-3-alt.png') 52% 88% no-repeat;
-								}			
-	#usp1 .content 				{ height: 83.44em; }
-	#usp1 .copy				 	{ padding-top: 30em;}
-	#usp2 .content,
-	#usp3 .content 				{ padding-top: 33em; }
-	#wrapper 					{ display: block; position: relative; height: 29em; }
-
-	.island.alpha 				{ background: url('../img/bg-masthead.jpg') center top no-repeat, transparent; }
-	.island.c 					{ background: url('../img/bg-usp2.png') center 93% no-repeat, transparent; }
-	.island.d 					{ background: url('../img/bg-usp3.png') center 70% no-repeat, transparent; }
-
-	.island.f 					{ border-top: 1px solid #e2eaed; border-bottom: 1px solid #e2eaed; }
-	.island.f .g.bg:before,
-	.island.f .g.bp:before,
-	.island.f .g.yr:before 		{ z-index: 0; }
-
-	.island.f .g.bg:after,
-	.island.f .g.bp:after,
-	.island.f .g.yr:after 		{ background: #fafafa; z-index: 1; }
-
-	.island.f .circ:first-child { /*left: 10%;*/ z-index: 0; }
-	.island.f .circ:nth-child(2){ /*left: 37.4%;*/ z-index: 2; }
-	.island.f .circ:last-child	{ /*right: 10%;*/ z-index: 1; } 
-	.island.f .circle.copy 		{ 
-									margin-left: -7.5em;
-									padding-top: 4em;
-									height: 15em;
-									width: 15em;
-									left: 50%;
-									position: absolute;
-									z-index: 2;
-									display: block;
-									border-radius: 50%;
-									text-align: center;
-									transition: all 0.15s ease-in-out;
-									-webkit-transition: all 0.15s ease-in-out;
-									-moz-transition: all 0.15s ease-in-out;
-									-ms-transition: all 0.15s ease-in-out;
-									-o-transition: all 0.15s ease-in-out;
-								}
-	.island.f .circle.copy img 	{ padding-bottom: 2em; }
-	.island.f .circ h5,
-	.island.f .circ p 			{ color: #47555b; transition: all 0.15s ease-in-out; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; -ms-transition: all 0.15s ease-in-out; -o-transition: all 0.15s ease-in-out; }
-	.island.f .circ 			{ transition: all 0.15s ease-in-out; -webkit-transition: all 0.15s ease-in-out; -moz-transition: all 0.15s ease-in-out; -ms-transition: all 0.15s ease-in-out; -o-transition: all 0.15s ease-in-out; }
-	.island.f .circ:hover 		{ color: #70848c; }
-
-	.island.z	 				{ height: 35.11em; background: url('../img/bg-colors.png') center top no-repeat; overflow: hidden; text-align: center; }
 
 
 /* -----------------------------------------
