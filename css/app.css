@@ -100,7 +100,7 @@
 	.island.alpha 						{ background: url('../img/bg-masthead.jpg') center center no-repeat, #75b9e0; background-size: 100%; height: 100%; }
 	.masthead 							{ padding-top: 12em; padding-bottom: 12em; text-align: center; }
 	#usp1, #usp2 		 				{ border-bottom: 1px solid #cdd5d9; }
-	#usp5 								{ text-align: center; }
+	#usp4, #usp5 						{ text-align: center; }
 
 	.island.b h2 						{ color: #49aaff; }
 	.island.c h2 						{ color: #f7b926; }
