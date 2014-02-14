@@ -45,8 +45,8 @@
 	.button.outline:hover 		{ background: #1e2426; color: #e4e7e9 !important; border: 2px solid #1e2426; }
 	.button.outline.light 		{ background: transparent; color: #e4e7e9; border: 2px solid #e4e7e9; }
 	.button.outline.light:hover { background: #e4e7e9; color: #47555b; border: 2px solid #e4e7e9; }
-	.button.outline.blue 		{ background: transparent; color: #4eaaff; border: 2px solid #4eaaff; }
-	.button.outline.blue:hover 	{ background: #4eaaff; color: #f2f2f2; border: 2px solid #4eaaff; }
+	.button.outline.blue 		{ background: transparent; color: #4eaaff !important; border: 2px solid #4eaaff; }
+	.button.outline.blue:hover 	{ background: #4eaaff; color: #f2f2f2 !important; border: 2px solid #4eaaff; }
 	.button.light 				{ background: #fafafa; color: #4eaaff; border: 2px solid #fafafa; }
 	.button.light:hover 		{ background: transparent; color: #fafafa; border: 2px solid #fafafa; }
 	.button.blue 				{ background: #4eaaff; color: #f2f2f2; }
@@ -112,9 +112,13 @@
 
 
 /* -----------------------------------------
-   Interior Pages
+   Career Pages
 ----------------------------------------- */
-		
+	
+	#listing > div p:first-child{ padding-bottom: .5em; border-bottom: 1px solid #e2eaed; }
+	#listing > div p:last-child { border-bottom: 1px solid #e2eaed; }
+	.job 						{ border-bottom: 1px solid #e2eaed; }
+	.job:last-child 			{ border-bottom: none; }	
 
 /* -----------------------------------------
    Press
