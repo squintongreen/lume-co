@@ -115,8 +115,7 @@
    Career Pages
 ----------------------------------------- */
 	
-	#listing > div p:first-child{ padding-bottom: .5em; border-bottom: 1px solid #e2eaed; }
-	#listing > div p:last-child { border-bottom: 1px solid #e2eaed; }
+	#listing 		 			{ border-bottom: 1px solid #e2eaed; }
 	.job 						{ border-bottom: 1px solid #e2eaed; }
 	.job:last-child 			{ border-bottom: none; }	
 

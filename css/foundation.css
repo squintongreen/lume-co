@@ -1389,6 +1389,7 @@ code {
 ul,
 ol,
 dl {
+  padding-left: 1em;
   font-size: 1em;
   line-height: 1.6;
   list-style-position: outside;
