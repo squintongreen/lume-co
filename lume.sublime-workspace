@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"border-bo",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-radius",
+				"border-top-right-radius"
+			],
+			[
 				"get",
 				"getElementById"
 			],
@@ -103,15 +111,15 @@
 			"file": "css/foundation.css",
 			"settings":
 			{
-				"buffer_size": 35158,
+				"buffer_size": 36491,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/app.css",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 16807,
+				"buffer_size": 7749,
 				"line_ending": "Unix"
 			}
 		}
@@ -163,22 +171,31 @@
 	},
 	"file_history":
 	[
-		"/Library/WebServer/Documents/lume/status/index.html",
+		"/Library/WebServer/Documents/lume/careers/designer.html",
+		"/Library/WebServer/Documents/lume/careers/index.html",
+		"/Library/WebServer/Documents/lume/press/index.html",
+		"/Library/WebServer/Documents/lume/privacy.html",
 		"/Library/WebServer/Documents/lume/support.html",
-		"/Library/WebServer/Documents/lume/index.html",
-		"/Library/WebServer/Documents/lume/careers/marketing.html",
+		"/Library/WebServer/Documents/lume/tos.html",
+		"/Library/WebServer/Documents/lume/status/index.html",
 		"/Library/WebServer/Documents/lume/mission.html",
+		"/Library/WebServer/Documents/lume/blog/index-tumblr.html",
+		"/Library/WebServer/Documents/lume/blog/index.html",
+		"/Library/WebServer/Documents/lume/blog/css/foundation.css",
+		"/Library/WebServer/Documents/lume/index.html",
+		"/Library/WebServer/Documents/lume/css/app.css",
+		"/Library/WebServer/Documents/lume/blog/themes/sandbox/category.php",
+		"/Library/WebServer/Documents/lume/careers/marketing.html",
+		"/Library/WebServer/Documents/lume/css/foundation.css",
+		"/Library/WebServer/Documents/lume/css/animate.css",
+		"/Library/WebServer/Documents/portfolio/work.html",
+		"/Library/WebServer/Documents/portfolio/javascripts/init.js",
+		"/Library/WebServer/Documents/portfolio/javascripts/app.js",
+		"/Library/WebServer/Documents/portfolio/index.html",
+		"/Library/WebServer/Documents/lume/blog/css/app.css",
 		"/Library/WebServer/Documents/lume/blog/themes/sandbox/attachment.php",
 		"/Library/WebServer/Documents/lume/blog/themes/sandbox/tag.php",
 		"/Library/WebServer/Documents/lume/blog/support-test.html",
-		"/Library/WebServer/Documents/lume/privacy.html",
-		"/Library/WebServer/Documents/lume/tos.html",
-		"/Library/WebServer/Documents/lume/careers/index.html",
-		"/Library/WebServer/Documents/lume/careers/designer.html",
-		"/Library/WebServer/Documents/lume/css/app.css",
-		"/Library/WebServer/Documents/lume/css/foundation.css",
-		"/Library/WebServer/Documents/lume/blog/css/foundation.css",
-		"/Library/WebServer/Documents/lume/blog/index-tumblr.html",
 		"/Users/admin/Google Drive/Lume/Jobs - Product Marketing.html",
 		"/Library/WebServer/Documents/lume/email/template-digest-wide.html",
 		"/Library/WebServer/Documents/lume/email/template-digest-narrow.html",
@@ -199,7 +216,6 @@
 		"/Library/WebServer/Documents/lume/email/Lume Team News.html",
 		"/Library/WebServer/Documents/lume/careers/visual-designer.html",
 		"/Library/WebServer/Documents/lume/img/logo-pip.svg",
-		"/Library/WebServer/Documents/lume/blog/css/app.css",
 		"/Library/WebServer/Documents/lume/careers/Lume Marketing Job Description.html",
 		"/Users/admin/Dropbox/Active/_lume/Documentation/Lume Master Plan.md",
 		"/Library/WebServer/Documents/portfolio/dev/css/app.css",
@@ -282,15 +298,7 @@
 		"/Users/Samuel/Sites/portfolio/dev/stylesheets/styles.css",
 		"/Users/Samuel/Sites/portfolio/dev/stylesheets/ui.css",
 		"/Users/Samuel/Sites/portfolio/dev/stylesheets/typography.css",
-		"/Users/Samuel/Sites/portfolio/dev/stylesheets/grid.css",
-		"/Users/Samuel/Sites/portfolio/dev/stylesheets/globals.css",
-		"/Users/Samuel/Sites/portfolio/dev/stylesheets/mobile.css",
-		"/Users/Samuel/Sites/portfolio/dev/stylesheets/app.css",
-		"/Users/Samuel/Sites/portfolio/hire/stylesheets/home.css",
-		"/Users/Samuel/Sites/portfolio/hire/icanhazjob.html",
-		"/Users/Samuel/Sites/portfolio/hire/stylesheets/index.css",
-		"/Users/Samuel/Sites/portfolio/dev/stylesheets/flexslider.css",
-		"/Users/Samuel/Sites/portfolio/dev/javascripts/animate.js"
+		"/Users/Samuel/Sites/portfolio/dev/stylesheets/grid.css"
 	],
 	"find":
 	{
@@ -308,134 +316,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"h3",
-			"h4",
-			"h1",
-			"cdd5d9",
-			"Helvetica",
-			"socialFooter",
-			"p",
-			"mission",
-			"aws@magnimbus.com",
-			"team@magnimbus.com",
-			"<h4>",
-			"h3",
-			"h1",
-			"h3",
-			"h4",
-			"h3",
-			"h1",
-			"e4e7e9",
-			"auto",
-			"support",
-			"h5",
-			"54px",
-			"36px",
-			"1",
-			"0",
-			"54px",
-			"36px",
-			"push-3",
-			"*",
-			"323c40",
-			"47555b",
-			"e2eaed",
-			"18px",
-			"h3",
-			"5",
-			"class=\"image center\" ",
-			"center",
-			"1423",
-			"678",
-			"info",
-			"1",
 			"</li>",
 			"<li>",
-			"2px",
-			"18px",
-			"27px",
+			"Top",
+			"blogBtm",
+			"Top",
+			"twitter",
+			"Top",
+			"appDownTop",
+			"Top",
+			"linkid",
+			"ul",
+			"Specialist",
+			"read",
+			"padding-bottom: .5em;",
+			"mission",
+			"bright",
+			"png",
 			"3",
+			"<li>",
+			"</li>",
+			"h4",
+			"b0",
+			"outline",
+			"header",
+			"h4",
+			"home",
 			"h2",
-			"1",
-			"3em",
-			"margin",
-			"3",
-			"NextPost",
-			"Post",
-			"PreviousPost",
-			"NextPost",
-			"PreviousPost",
-			"#pagination",
-			".island.c",
-			"You can find more articles like this under",
-			"939b9f",
-			"<p>{DayOfMonth}.{MonthNumber}.{Year}</p>",
-			"6em",
-			".row.center",
-			".center",
-			".centered",
-			"        $('#play-1').removeClass('active');\n        $('#play-2').removeClass('active');\n",
-			"        $('.movie-1').addClass('invisible');\n        $('.movie-1').removeClass('visible');\n        $('.movie-2').addClass('invisible');\n        $('.movie-2').removeClass('visible');\n",
-			"addClass",
-			"add",
-			"80px",
-			"gif",
-			"lume.io",
-			"mt1",
-			"mt2",
-			"939b9f",
-			"mt1",
-			"<div class=\"share\">\n                  <a class=\"button share\" href=\"\">\n                    <img src=\"http://www.lumeapp.co/blog/img/icn-share.png\" alt=\"an icon indicating an action\" title=\"Share this article.\" width=\"16px\" height=\"16px\" />\n                  </a>\n                  <!-- \n                  <div class=\"blocks\">\n                    <a class=\"button square facebook\" href=\"\">\n                      <img src=\"img/icn-fb.png\" alt=\"an icon indicating an action\" title=\"Share on Facebook\" width=\"12px\" height=\"21px\" />\n                    </a>\n                    <a class=\"button square twitter\" href=\"\">\n                      <img src=\"img/icn-twitter.png\" alt=\"an icon indicating an action\" title=\"Share on Twitter\" width=\"24px\" height=\"16px\" />\n                    </a>\n                  </div>\n                  -->\n                </div>",
-			"lume.io",
-			"div class=\"post-footer\"",
-			"footer",
-			"NextPage",
-			"PreviousPage",
-			"IndexPage",
-			"h2",
-			"mt1",
-			"6px",
-			"menuOpen",
-			"css",
-			"300",
-			"150",
-			"menuToggle",
-			"lg",
-			"height",
-			"navigation",
-			"34",
-			"path",
-			"hamburger",
-			"1e2426",
-			"68.571",
-			"68.572",
-			"90px",
-			"					-webkit-animation-iteration-count: 1;\n",
-			"1",
-			"movie",
-			"#second .movie ",
-			"-webkit-animation-direction: alternate;",
-			"animation",
-			"-webkit-animation-direction: alternate;",
-			"									-webkit-animation-direction: alternate;\n",
-			"infinite",
-			"slide",
-			"thin",
-			"2em",
-			"1em",
-			"90px",
-			"27px",
-			"18px",
-			"copy",
-			"54px",
-			".frame",
-			"padding: 0;",
-			"2px 12px 4px",
-			"padding: 2px 12px 4px;",
-			"12px",
+			"h1",
+			"Download",
+			"h3",
+			"76",
+			"76px",
+			"58px",
+			" logo",
+			"logo",
+			"present",
 			"e4e7e9",
-			"border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -ms-border-radius: 18px; -o-border-radius: 18px;",
-			"h4"
+			"sitemap",
+			"h4",
+			"strong",
+			"-12",
+			"-wide",
+			"div class=\"large-4 small-12 columns\"",
+			"large-4 small-12 columns",
+			"transformY",
+			"this",
+			".children(arrow)",
+			"'.hover-info'",
+			"0px",
+			"h3",
+			"h4",
+			"6",
+			"fc782e",
+			"margin",
+			"h3",
+			"40",
+			"mt5",
+			"iphone",
+			"iPhone",
+			"spacer",
+			"aniwrap",
+			"7",
+			"copy",
+			"canvas",
+			"lume",
+			"Lume",
+			"lume",
+			"large-12",
+			"h5",
+			"1e2426",
+			"p.intro",
+			"h5",
+			"h3",
+			"h2",
+			"1.1",
+			"1.2",
+			".8",
+			"1",
+			"scale(1)",
+			"scale(1.1)",
+			"scale(1)",
+			"    opacity: 1;\n",
+			"bounce",
+			"scale3d",
+			"-15px",
+			"-30px",
+			"30px",
+			"translateY",
+			"goals",
+			"trigger",
+			"goals",
+			"'#usp5 .circ'",
+			"circle.wrapper			",
+			"this",
+			"h3",
+			"12",
+			"18em",
+			"med",
+			"relative",
+			"\n								",
+			"after",
+			"top: -3px;\n									left: -3px;\n									bottom: -3px;\n									right: -3px;",
+			"top: -3px;",
+			"18em",
+			"lg",
+			"28em",
+			"12",
+			"09e65a",
+			"ffc81e",
+			"yg",
+			"8",
+			"09e65a",
+			"ffc81e",
+			"yg",
+			"16",
+			"0",
+			"4",
+			"8",
+			"09e65a",
+			"ffc81e",
+			"09e65a",
+			"yg",
+			"f2f2f2",
+			"26",
+			"30",
+			"30em",
+			"23em",
+			"transparent"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -478,15 +486,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35158,
+						"buffer_size": 36491,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1690,
-								1690
+								33254,
+								33384
 							]
 						],
 						"settings":
@@ -496,7 +504,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 27217.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -504,25 +512,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "css/app.css",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16807,
+						"buffer_size": 7749,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10307,
-								10307
+								301,
+								301
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -581,6 +590,50 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"careers/index.html"
+			],
+			[
+				"index.html",
+				"status/index.html"
+			],
+			[
+				"index-",
+				"blog/index-tumblr.html"
+			],
+			[
+				"pri",
+				"privacy.html"
+			],
+			[
+				"to",
+				"tos.html"
+			],
+			[
+				"car",
+				"careers/index.html"
+			],
+			[
+				"sup",
+				"support.html"
+			],
+			[
+				"mar",
+				"careers/marketing.html"
+			],
+			[
+				"desi",
+				"careers/designer.html"
+			],
+			[
+				"market",
+				"careers/marketing.html"
+			],
+			[
+				"anima",
+				"css/animate.css"
+			],
+			[
 				"status",
 				"status/index.html"
 			],
@@ -591,14 +644,6 @@
 			[
 				"miss",
 				"mission.html"
-			],
-			[
-				"market",
-				"careers/marketing.html"
-			],
-			[
-				"desi",
-				"careers/designer.html"
 			],
 			[
 				"designer",
@@ -633,16 +678,8 @@
 				"privacy.html"
 			],
 			[
-				"index",
-				"blog/index-tumblr.html"
-			],
-			[
 				"visu",
 				"careers/visual-designer.html"
-			],
-			[
-				"to",
-				"tos.html"
 			],
 			[
 				"",
@@ -653,20 +690,8 @@
 				"tos.html"
 			],
 			[
-				"pri",
-				"privacy.html"
-			],
-			[
 				"priv",
 				"privacy.html"
-			],
-			[
-				"index-",
-				"blog/index-tumblr.html"
-			],
-			[
-				"sup",
-				"support.html"
 			],
 			[
 				"app",
@@ -778,7 +803,7 @@
 		[
 			[
 				"",
-				"/Library/WebServer/Documents/clients/local-color/lc.sublime-project"
+				"/Library/WebServer/Documents/portfolio/sqg.sublime-project"
 			],
 			[
 				"sqg",

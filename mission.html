@@ -34,10 +34,10 @@
             <a class="active" href="mission.html">mission</a>
           </li>
           <li>
-            <a href="http://blog.lumeapp.co">blog</a>
+            <a id="blogTop" href="http://blog.lumeapp.co">blog</a>
           </li>
           <li>
-            <a class="text thick" href="https://itunes.apple.com/us/app/lume-personal-tracker/id712572824?ls=1&mt=8">get lume</a>
+            <a class="text thick" id="appDownTop" href="https://itunes.apple.com/us/app/lume-personal-tracker/id712572824?ls=1&mt=8">get lume</a>
           </li>
         </ul>
       </div><!-- /nav -->
@@ -97,12 +97,12 @@
       </div>
       <div class="large-12 small-12 columns nav sitemap mb2">
         <ul>
-          <li><a href="http://blog.lumeapp.co">blog</a></li>
-          <li><a href="mailto:hello@lumeapp.co">contact</a></li>
-          <li><a href="http://www.lumeapp.co/support.html">support</a></li>
-          <li><a href="http://www.lumeapp.co/privacy.html">privacy</a></li>
-          <li><a href="http://www.lumeapp.co/tos.html">terms</a></li>
-          <li><a href="http://www.lumeapp.co/press-kit.zip">press kit</a></li>
+          <li><a id="blogBtm" href="http://blog.lumeapp.co">Blog</a></li>
+          <li><a id="contact" href="mailto:hello@lumeapp.co">Contact</a></li>
+          <li><a id="support" href="http://www.lumeapp.co/support.html">Support</a></li>
+          <li><a href="http://www.lumeapp.co/privacy.html">Privacy</a></li>
+          <li><a href="http://www.lumeapp.co/tos.html">Terms</a></li>
+          <li><a href="http://www.lumeapp.co/press/">Press</a></li>
         </ul>
       </div><!-- /nav -->
       <div class="large-12 small-12 columns">
@@ -119,145 +119,7 @@
   <script src="js/app.js"></script>
   <script src="js/swipe.js"></script>
   <script type="text/javascript">
-    var colorShift;
-    var views;
-    var oldColor = "color-light";
-    views = document.getElementById('viewer');
-
-    function colorShift() {
-     
-      slidePos = window.mySwipe.getPos();        
-      var newColor = "color-light";
-
-      if ( slidePos == 0 )
-        {
-          newColor = "color-light";
-          $('path[id="logo-svg"]').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] path').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"]').attr('stroke', '#1e2426');
-        }
-      else if ( slidePos == 1 ) 
-        {
-          newColor = "color-blue";
-          $('path[id="logo-svg"]').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] path').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] line').attr('stroke', '#e4e7e9');
-        }
-      else if ( slidePos == 2 ) 
-        {
-          newColor = "color-green";
-          $('path[id="logo-svg"]').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] path').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] line').attr('stroke', '#e4e7e9');
-        }
-      else if ( (slidePos == 3) ) 
-        {
-          newColor = "color-yellow";
-          $('path[id="logo-svg"]').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] path').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] line').attr('stroke', '#1e2426');
-        }
-      else if ( (slidePos == 4) ) 
-        {
-          newColor = "color-orange";
-          $('path[id="logo-svg"]').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] path').attr('fill', '#e4e7e9');
-          $('#hamburger g[id="View"] line').attr('stroke', '#e4e7e9');
-        }
-      else if ( (slidePos == 5) ) 
-        {
-          newColor = "color-light";
-          $('path[id="logo-svg"]').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] path').attr('fill', '#1e2426');
-          $('#hamburger g[id="View"] line').attr('stroke', '#1e2426');
-        }
-        $(viewer).addClass(newColor);
-        $(viewer).removeClass(oldColor);
-        oldColor = newColor;
-    };
-
-    window.mySwipe = Swipe(document.getElementById('slider'), {
-      continuous: false,
-      callback: function() { colorShift(); }
-    });
-    var slidePos = window.mySwipe.getPos();
-
     $(document).ready(function () {
-      $('.movie-4').addClass('invisible');
-      $('.movie-5').addClass('invisible');
-      $('.movie-6').addClass('invisible');
-      $('#play-3').click(function() {
-        $('.movie-3').addClass('visible');
-        $('.movie-3').removeClass('invisible');
-        $('.movie-4').addClass('invisible');
-        $('.movie-4').removeClass('visible');
-        $('.movie-5').addClass('invisible');
-        $('.movie-5').removeClass('visible');
-        $('.movie-6').addClass('invisible');
-        $('.movie-6').removeClass('visible');
-        $('#play-3').addClass('active');
-        $('#play-4').removeClass('active');
-        $('#play-5').removeClass('active');
-        $('#play-6').removeClass('active');
-        return false;
-      });
-      $('#play-4').click(function() {
-        $('.movie-3').addClass('invisible');
-        $('.movie-3').removeClass('visible');
-        $('.movie-4').addClass('visible');
-        $('.movie-4').removeClass('invisible');
-        $('.movie-5').addClass('invisible');
-        $('.movie-5').removeClass('visible');
-        $('.movie-6').addClass('invisible');
-        $('.movie-6').removeClass('visible');
-        $('#play-3').removeClass('active');
-        $('#play-4').addClass('active');
-        $('#play-5').removeClass('active');
-        $('#play-6').removeClass('active');
-        return false;
-      });
-      $('#play-5').click(function() {
-        $('.movie-3').addClass('invisible');
-        $('.movie-3').removeClass('visible');
-        $('.movie-4').addClass('invisible');
-        $('.movie-4').removeClass('visible');
-        $('.movie-5').addClass('visible');
-        $('.movie-5').removeClass('invisible');
-        $('.movie-6').addClass('invisible');
-        $('.movie-6').removeClass('visible');
-        $('#play-3').removeClass('active');
-        $('#play-4').removeClass('active');
-        $('#play-5').addClass('active');
-        $('#play-6').removeClass('active');
-        return false;
-      });
-      $('#play-6').click(function() {
-        $('.movie-3').addClass('invisible');
-        $('.movie-3').removeClass('visible');
-        $('.movie-4').addClass('invisible');
-        $('.movie-4').removeClass('visible');
-        $('.movie-5').addClass('invisible');
-        $('.movie-5').removeClass('visible');
-        $('.movie-6').addClass('visible');
-        $('.movie-6').removeClass('invisible');
-        $('#play-3').removeClass('active');
-        $('#play-4').removeClass('active');
-        $('#play-5').removeClass('active');
-        $('#play-6').addClass('active');
-        return false;
-      });
-      /*$('#playMovie').click(function () {
-        if ( !($('#movie').hasClass('animating')) )
-        {
-          $('.movie').addClass('animating');
-          $('.movie-1').addClass('stage-1');
-          $('.movie-2').addClass('stage-2');
-          $('.movie-3').addClass('stage-3');
-          $('.movie-4').addClass('stage-4');
-          $('.movie-5').addClass('stage-5');
-          return false;
-        } else { return false; }
-      });*/
       $('#mobileNav').hide();
       $('#menuOpen').click(function () {
         $('#mobileNav').fadeIn(200);
@@ -284,8 +146,14 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-44120850-1', 'lumeapp.co');
+    ga('create', 'UA-49142726-1', 'lumeapp.co');
+    ga('require', 'twitter', 'twitter.js');
+    ga('require', 'blogTop', 'blogTop.js');
+    ga('require', 'blogBtm', 'blogBtm.js');
+    ga('require', 'support', 'support.js');
+    ga('require', 'contact', 'contact.js');
     ga('send', 'pageview');
+
   </script>
 
 
