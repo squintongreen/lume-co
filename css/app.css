@@ -13,9 +13,9 @@
    Shared Styles
 ----------------------------------------- */
 
-	.button 					{ padding: 4px 12px 8px; height: 40px; font-variant: small-caps; letter-spacing: 1px; display: inline-block; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
+	.button 					{ padding: 4px 12px 8px; height: 40px; letter-spacing: 1px; display: inline-block; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
 	.button:hover 				{ -webkit-transition: all .15s ease-in-out; -moz-transition: all .15s ease-in-out; -ms-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; }
-	.button.lg 					{ padding: 16px 24px 0; height: 63px !important; font-size: 1.25em; -webkit-border-radius: 31.5px; -moz-border-radius: 31.5px; -ms-border-radius: 31.5px; -o-border-radius: 31.5px; border-radius: 31.5px; }
+	.button.lg 					{ padding: .75em 1.15em 0; height: 54px !important; font-size: 1em; -webkit-border-radius: 27px; -moz-border-radius: 27px; -ms-border-radius: 27px; -o-border-radius: 27px; border-radius: 27px; }
 	.button.xl 					{ padding: 18px 48px 0px; height: 72px; font-size: 1.5em; display: inline-block; -webkit-border-radius: 36px; -moz-border-radius: 36px; -ms-border-radius: 36px; -o-border-radius: 36px; border-radius: 36px; }
 	.button.circle 				{ padding: 14px 17px 0; width: 48px; height: 48px; text-align: center; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; }
 	.button.centered 			{ margin: 0 auto; padding: 18px 0 0px; width: 45%; height: 72px; display: block; float: none; text-align: center !important; font-size: 1.5em; -webkit-border-radius: 36px; -moz-border-radius: 36px; -ms-border-radius: 36px; -o-border-radius: 36px; border-radius: 36px; }
@@ -25,18 +25,20 @@
 	.button.outline.light:hover { background: #e4e7e9; color: #1e2426; border: 2px solid #e4e7e9; }
 	.button.outline.blue 		{ background: transparent; color: #4eaaff !important; border: 2px solid #4eaaff; }
 	.button.outline.blue:hover 	{ background: #4eaaff; color: #f2f2f2 !important; border: 2px solid #4eaaff; }
+	.button.gradientBlue 		{ border: 2px solid #1FA6D0; color: #1FA6D0; } 
+	.button.gradientBlue:hover 	{ border: 2px solid #48D3E3; color: #48D3E3; } 			
 	.button.blue 				{ background: #4eaaff; color: #f2f2f2; }
 	.button.blue:hover 			{ background: #3fc0d5; }
 	.button.apple 				{ padding: 0; border: none; }
 	.button.apple:hover 		{ border: none; }
 	.button.apple svg 			{ margin: 0 auto; float: none; display: block; }
 
-	.text.bright 				{ color: #e4e7e9; }
-	.text.light 				{ color: #c7cfd1; }
+	.text.bright 				{ color: #F2F5F7; }
+	.text.light 				{ color: #E2EAED; }
 	.text.mid 					{ color: #b0babf; }
 	.text.dim 	 				{ color: #47555b; }
-	.text.dark  				{ color: #364045; }
-	.text.darker 				{ color: #1f232b; }
+	.text.dark  				{ color: #323C40; }
+	.text.darker 				{ color: #1E2426; }
 	.text.center 				{ text-align: center; }
 	.text.thin 					{ font-weight: 300; }
 	.text.medium 				{ font-weight: 500; }
@@ -44,15 +46,49 @@
 	.text.huge 					{ font-size: 4em; }
 	.image.center 				{ margin: 0 auto; display: block; float: none; }	
 
-
 	.visible 					{ opacity: 1; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.invisible 					{ opacity: 0; transition: .15s all ease-in-out; -webkit-transition: .15s all ease-in-out; -moz-transition: .15s all ease-in-out; -ms-transition: .15s all ease-in-out; -o-transition: .15s all ease-in-out; }
 	.css3-blur 					{ -webkit-filter: blur(3px) !important; filter: blur(3px) !important; opacity: 1; /* restore the opacity for that browser */ }
+
+	#header  					{ background: url("../img/bg-top-nav.png") center top no-repeat; background-size: cover; }
+	.nav.site 					{ padding-top: 2em; padding-bottom: 2em; }
+	.nav.site a 				{ margin: 0 20px; color: #ADABF2; text-decoration: none; font-variant: small-caps; font-weight: 300; letter-spacing: 1px; display: inline-block; }
+	.nav.site a:hover,
+	.nav.site a.active 			{ color: #F2F5F7; text-decoration: none; border-bottom: 2px solid #F2F5F7; }
+
+	.nav.bottom a 				{ margin: 0 10px; color: #70848C; text-decoration: none; font-weight: 300; }
+	.nav.bottom a:hover,
+	.nav.bottom a.active 		{ color: #323C40; text-decoration: none; border-bottom: 2px solid #323C40; }
+
+	.island .copy 				{ padding-top: 12em; }
+
+
 
 /* -----------------------------------------
    Home
 ----------------------------------------- */
 	
+
+	.island.a 					{ padding-top: 4em; padding-bottom: 4em; }
+	.island.b 					{ padding-top: 4em; padding-bottom: 4em; }
+	.island.c 					{ padding-top: 3em; padding-bottom: 3em; background: #1E2426; text-align: center; }
+	.island.c .columns img 		{ margin: 0 auto; padding-bottom: 1em; display: block; }
+	.island.d 					{ background: url("../img/bg-closer.png") center top no-repeat; background-size: cover; }
+	.island.d .copy a.button  	{ padding-left: 0 !important; }
+	.island.e 					{ padding-top: 4em; padding-bottom: 4em; }
+	
+	.usp0 .copy 				{ padding-top: 9em; }
+	.usp0 .copy img 			{ padding-right: 1em; float: left; }
+	.usp0 .copy p.b3 		 	{ padding-top: .75em;}
+	.usp0 .copy p.b2 		 	{ padding-top: 1em; }
+
+	.usp1 .copy h5 				{ color: #48BF0D; }
+	.usp2 .copy h5 				{ color: #FEAA00; }
+	.usp3 .copy h5 				{ color: #FF4901; }
+
+	.usp1 						{ padding-bottom: 4em; }
+	.usp2 						{ padding-top: 4em; padding-bottom: 4em; }
+	.usp3 						{ padding-top: 4em; }
 
 
 /* -----------------------------------------
