@@ -77,9 +77,9 @@
 	.island.d .copy a.button  	{ padding-left: 0 !important; }
 	.island.e 					{ padding-top: 4em; padding-bottom: 4em; }
 	
-	.usp0 .copy 				{ padding-top: 9em; }
+	.usp0 .copy 				{ padding-top: 6em; }
 	.usp0 .copy img 			{ padding-right: 1em; float: left; }
-	.usp0 .copy p.b3 		 	{ padding-top: .75em;}
+	.usp0 .copy h3	 		 	{ padding-top: .25em;}
 	.usp0 .copy p.b2 		 	{ padding-top: 1em; }
 
 	.usp1 .copy h5 				{ color: #48BF0D; }
