@@ -59,6 +59,11 @@ img {
 
 .right {
   float: right !important; }
+.center {
+  float: none !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .text-left {
   text-align: left !important; }
@@ -193,7 +198,7 @@ select {
   margin-top: 0;
   margin-bottom: 0;
   /* max-width: 71em; */
-  max-width: 50em;
+  max-width: 56em;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
