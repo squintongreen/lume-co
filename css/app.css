@@ -87,9 +87,6 @@
 	
 	#p-index 					{ background: #FAFAFA; }
 	.island.a 					{ padding-top: 4em; padding-bottom: 6em; border-bottom: 1px solid #CDD5D9; }
-	.island.d 					{ background: url("../img/bg-closer.png") center top no-repeat; background-size: cover; }
-	.island.d .copy 			{ padding-top: 4em; }
-	.island.d .copy a.button  	{ padding-left: 0 !important; }
 	
 	.usp0 						{ /*padding-bottom: 4em; border-bottom: 1px solid #CDD5D9;*/ }
 	.usp1,
@@ -152,6 +149,11 @@
 	#features 					{ padding-top: 3em; padding-bottom: 3em; border-top: 1px solid #CDD5D9; }
 	#features > p 				{ margin: -3.875em auto 3em; background: #FAFAFA; border: 1px solid #CDD5D9; border-radius: 5px; width: 10em; font-variant: small-caps; font-weight: 500; text-align: center; }
 	#features img 				{ margin: 0 auto; padding-bottom: 1em; display: block; }
+
+	.island.d 					{ background: url("../img/iphone-iso.png") 115% 110% / 45% no-repeat, url("../img/bg-closer.png") center top / cover no-repeat; }
+	.island.d .copy 			{ padding-top: 6em; text-align: center; }
+	.island.d .copy a			{ display: block; }
+	.island.d .copy > img 		{ margin: 0 auto; padding: 0 0 2em; display: block; } 
 
 	a.down 						{ padding: 17px 0 0 !important; background: #FAFAFA; color: #47555B; border: 1px solid #47555B; position: absolute; left: 48.25%; top: 40em; }
 	a.down:hover 				{ padding-top: 20px !important; background: #FAFAFA; color: #1E2426; border: 1px solid #1E2426; }
