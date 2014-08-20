@@ -226,7 +226,7 @@
    Media Queries
 ----------------------------------------- */
 
-/* Retina Browser, Small
+/* Retina Browser, Small */
 @media only screen and (device-aspect-ratio: 40/71) and (device-height: 568px) {
 	#header 		{ background: none; border-bottom: none; text-align: center; }
 	.mobileHeader img{ margin: 0 auto; display: block; }
@@ -316,16 +316,14 @@
 	.graph 						{ left: 50%; top: 104em; -webkit-transform: translate(-50%,0); }
 	.journal 					{ left: 50%; top: 151em; -webkit-transform: translate(-50%,0); }
 }
-*/
 
-/* Non-Retina Browser, Nexus 7 (Portrait)
+/* Non-Retina Browser, Nexus 7 (Portrait) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
 	#header 	{ padding-top: 0; }
 	.nav.site  	{ background: #FAFAFA; }
 }
-*/
 
-/* Non-Retina Browser, iPad Mini (Portrait)
+/* Non-Retina Browser, iPad Mini (Portrait) */
 @media only screen and (min-width: 641px) and (max-width: 768px) { 
 
 	#header 		{ background: none; position: absolute; top: 0; z-index: 1001; }
@@ -414,9 +412,8 @@
 	.graph 						{ display: none; }
 	.journal 					{ display: none; }
 }
-*/
 
-/* Non-Retina Browser, iPad Mini (Landscape)
+/* Non-Retina Browser, iPad Mini (Landscape) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 	#header 		{ background: none; position: absolute; top: 0; z-index: 1001; }
 
@@ -478,7 +475,6 @@
 	.graph 						{ left: 47.05%; top: 99em; }
 	.journal 					{ left: 47.15%; top: 140em; }
 }
-*/
 
 /* Non-Retina Browser, Large */
 @media only screen and (min-width: 1025px) and (max-width: 2559px) {
